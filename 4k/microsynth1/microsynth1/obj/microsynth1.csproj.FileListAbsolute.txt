@@ -1,0 +1,8 @@
+c:\work\4k\microsynth1\microsynth1\obj\Debug\ResolveAssemblyReference.cache
+c:\work\4k\microsynth1\microsynth1\bin\Debug\microsynth1.exe
+c:\work\4k\microsynth1\microsynth1\bin\Debug\microsynth1.pdb
+c:\work\4k\microsynth1\microsynth1\obj\Debug\microsynth1.exe
+c:\work\4k\microsynth1\microsynth1\obj\Debug\microsynth1.pdb
+c:\work\4k\microsynth1\microsynth1\bin\Release\microsynth1.exe
+c:\work\4k\microsynth1\microsynth1\obj\Release\ResolveAssemblyReference.cache
+c:\work\4k\microsynth1\microsynth1\obj\Release\microsynth1.exe

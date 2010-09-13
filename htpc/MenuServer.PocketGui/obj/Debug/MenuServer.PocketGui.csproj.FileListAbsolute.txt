@@ -1,0 +1,13 @@
+c:\work\htpc2\MenuServer.PocketGui\bin\Debug\MenuServer.PocketGui.exe
+c:\work\htpc2\MenuServer.PocketGui\bin\Debug\MenuServer.PocketGui.pdb
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\ResolveAssemblyReference.cache
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.Properties.Resources.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.csproj.GenerateResource.Cache
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.exe
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.pdb
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.Form1.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.Menus.ActionMenu.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.Menus.DefaultMenu.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.Menus.NotificationMenu.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.OptionsPage.resources
+c:\work\htpc2\MenuServer.PocketGui\obj\Debug\MenuServer.PocketGui.StandardMenu.resources

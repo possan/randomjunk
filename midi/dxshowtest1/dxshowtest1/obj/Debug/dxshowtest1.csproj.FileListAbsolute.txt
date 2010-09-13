@@ -1,0 +1,10 @@
+c:\work\midi\dxshowtest1\dxshowtest1\bin\Debug\dxshowtest1.exe
+c:\work\midi\dxshowtest1\dxshowtest1\bin\Debug\dxshowtest1.pdb
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\ResolveAssemblyReference.cache
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\dxshowtest1.Form1.resources
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\dxshowtest1.Properties.Resources.resources
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\dxshowtest1.csproj.GenerateResource.Cache
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\dxshowtest1.exe
+c:\work\midi\dxshowtest1\dxshowtest1\obj\Debug\dxshowtest1.pdb
+c:\work\midi\dxshowtest1\dxshowtest1\bin\Debug\DirectShowLib-2005.dll
+c:\work\midi\dxshowtest1\dxshowtest1\bin\Debug\DirectShowLib-2005.pdb

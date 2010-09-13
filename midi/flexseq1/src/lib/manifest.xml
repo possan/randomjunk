@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<componentPackage>
+	<component id="AnalogClock" class="sequencer.AnalogClock" />
+
+	<component id="RangeInterpolator" class="sequencer.RangeInterpolator" />
+	<component id="TimePositionInterpolator" class="sequencer.TimePositionInterpolator" />
+	<component id="PositionValueInterpolator" class="sequencer.PositionValueInterpolator" />
+	
+	<component id="TrackList" class="sequencer.TrackList" />
+	<component id="TrackViewport" class="sequencer.TrackViewport" />
+	<component id="BaseTrack" class="sequencer.BaseTrack" />
+	<component id="NoteTrack" class="sequencer.NoteTrack" />
+	<component id="BarTimeline" class="sequencer.BarTimeline" />
+</componentPackage>

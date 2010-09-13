@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqTest1", "SeqTest1\SeqTest1.csproj", "{F88E1E55-D367-4B0B-A436-8AC3426CC527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F88E1E55-D367-4B0B-A436-8AC3426CC527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88E1E55-D367-4B0B-A436-8AC3426CC527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88E1E55-D367-4B0B-A436-8AC3426CC527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88E1E55-D367-4B0B-A436-8AC3426CC527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

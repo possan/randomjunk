@@ -1,0 +1,155 @@
+<html>
+<head>
+	<title>WE!J</title>
+
+	<script type="text/javascript" src="js/prototype.js"></script>
+
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+
+	<link rel="stylesheet" href="seq.css" />
+	<link rel="stylesheet" href="song.css" />
+
+	<script type="text/javascript" src="common.js"></script>
+
+	<script type="text/javascript" src="song.js"></script>
+
+</head>
+<body class="seq" onload="initSongView();">
+	<div class="headerblock" id="headerblock">
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="songeditor-content">
+				<div class="songeditor-top">
+					<ul class="toolbar">
+						<li><big>Song editor</big></li>
+						<li></li>
+						<li><span>Song duration:</span> </li>
+						<li>
+							<select>
+								<option>4 Bars</option>
+								<option>8 Bars</option>
+								<option>16 Bars</option>
+							</select>
+						</li>
+						<li></li>
+						<li><span>Loop</span> </li>
+						<li>
+							<select>
+								<option>Enabled</option>
+								<option>Disabled</option>
+							</select>
+						</li>
+						<li><span>from</span> </li>
+						<li>
+							<input type="text" style="width: 80px;"></input>
+						</li>
+						<li><span>to</span> </li>
+						<li>
+							<input type="text" style="width: 80px;"></input>
+						</li>
+						<li class="spacer"></li>
+						<li><span>Zoom:</span> </li>
+						<li>
+							<select>
+								<option>25%</option>
+								<option>50%</option>
+								<option>100%</option>
+								<option>200%</option>
+								<option>400%</option>
+							</select>
+						</li>
+						<li class="last"></li>
+					</ul>
+				</div>
+				<div class="songeditor-body">
+					<div class="songeditor-grid" style="width: 1000px;">
+						<ul class="songtracks">
+							<li class="head">
+								<div>
+									<span></span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>Bass</span>
+								</div>
+							</li>
+							<li class="odd">
+								<div>
+									<span>Synth</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>Drums1</span>
+								</div>
+							</li>
+							<li class="odd">
+								<div>
+									<span>Drums2</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>Noises1</span>
+								</div>
+							</li>
+						</ul>
+						<div class="l" style="left: 100px;">
+							<span>01</span>
+						</div>
+						<div class="l" style="left: 200px;">
+							<span>02</span>
+						</div>
+						<div class="l" style="left: 300px;">
+							<span>03</span>
+						</div>
+						<div class="l" style="left: 400px;">
+							<span>04</span>
+						</div>
+						<div class="l" style="left: 500px;">
+							<span>05</span>
+						</div>
+						<div class="l" style="left: 600px;">
+							<span>06</span>
+						</div>
+						<div class="l" style="left: 700px;">
+							<span>07</span>
+						</div>
+						<div class="l" style="left: 800px;">
+							<span>08</span>
+						</div>
+						<div class="l" style="left: 900px;">
+							<span>09</span>
+						</div>
+						<div class="b" style="left: 100px; top: 20px; width: 100px; background-color: #f00;">
+							<div>
+								<span>PAT00</span>
+							</div>
+						</div>
+						<div class="b" style="left: 200px; top: 60px; width: 200px;">
+							<div>
+								<span>PAT054</span>
+							</div>
+						</div>
+						<div class="b" style="left: 400px; top: 40px; width: 100px;">
+							<div>
+								<span>PAT03</span>
+							</div>
+						</div>
+						<div class="p1" style="left: 250px;">
+						</div>
+						<div class="p2" style="left: 150px;">
+						</div>
+						<div class="p3" style="left: 390px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+	</div>
+</body>
+</html>

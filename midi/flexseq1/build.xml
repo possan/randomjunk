@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="flexlib" basedir="." default="show">
+
+	<property file="build.properties" />
+
+	<target name="init">
+		<tstamp/>
+		<fail unless="asdoc.exe">The "asdoc.exe" property must be set in ${build.dir}/build.properties.</fail>
+		<fail unless="compc.exe">The "compc.exe" property must be set in ${build.dir}/build.properties.</fail>
+		<fail unless="mxmlc.exe">The "mxmlc.exe" property must be set in ${build.dir}/build.properties.</fail>
+	</target>
+
+	<target name="lib" depends="init">
+		<fileset dir="src/lib">
+			<include name="sequencer/*.as"/>
+		</fileset>
+		<exec executable="${compc.exe}" dir="src/lib" failonerror="true">
+			<arg line="-output ../../bin/sequencer.swc" />
+			<arg line="-source-path ." />
+			<arg line="-include-classes sequencer.AnalogClock sequencer.RangeInterpolator sequencer.PositionValueInterpolator sequencer.TimePositionInterpolator sequencer.TrackList sequencer.TrackViewport sequencer.BaseTrack sequencer.NoteTrack sequencer.BarTimeline" />
+			<arg line="-namespace http://code.possan.se/sequencer manifest.xml" />
+		</exec>
+	</target>
+
+	<target name="app" depends="lib">
+		<fileset dir="src/app">
+			<include name="*.mxml"/>
+		</fileset>
+		<exec executable="${mxmlc.exe}" dir="src/app" failonerror="true">
+			<arg line="test.mxml" />
+			<arg line="-output ../../bin/app.swf" />
+			<arg line="-library-path+=../../bin/sequencer.swc" />
+			<arg line="-library-path+=../../bin/flexlib.swc" />
+		</exec>
+	</target>
+
+	<target name="show" depends="app">
+		<echo>All done.</echo>
+		<exec executable="cmd" dir="bin" failonerror="true">
+			<arg value="/c"/>
+			<arg value="start /MAX app.swf"/>
+		</exec>
+
+	</target>
+
+	<!-- target name="zip" depends="lib,docs">
+		 <zip destfile="${bin.dir}/${library.name}.zip">
+			<fileset dir="${basedir}">
+				<include name="bin/${library.name}.swc" />
+				<include name="src/**" />
+		    	<include name="docs/**" />
+				<include name="examples/**" />
+				<exclude name="**/*_Sample.swf" />
+			</fileset>
+		</zip>
+	</target -->
+
+</project>

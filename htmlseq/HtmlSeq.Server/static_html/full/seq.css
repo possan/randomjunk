@@ -1,0 +1,264 @@
+body.seq
+{
+	background-color: #222;
+	color: #fff;
+	font: 8pt Helvetica, Arial, sans-serif;
+	overflow: hidden;
+}
+
+a
+{
+	color: #f80;
+	text-decoration: none;
+}
+
+.headerblock
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 76px;
+	background-color: #111;
+	background-image: url(img/headerbackground.gif);
+}
+
+.headerblock .tabs
+{
+	position: absolute;
+	right: 20px;
+	top: 0px; 
+}
+
+.headerblock .tabs ul
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.headerblock .tabs ul li
+{
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-image: url(img/tab0.gif);
+	background-repeat: no-repeat;
+}
+
+.headerblock .tabs ul li a
+{
+	display: block;
+	width: 77px;
+	height: 76px;
+	position: relative;
+	text-decoration: none;
+}
+
+.headerblock .tabs ul li a span
+{
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 45px 0 0 0;
+	font: 15px Helvetica, Arial;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+.headerblock .tabs ul li.selected
+{ 
+	background-image: url(img/tab1.gif); 
+}
+
+
+.headerblock .tabs ul li.last
+{
+	display: block;
+	clear: both;
+	float: left;
+}
+
+.headerblock .logo
+{
+	position: absolute;
+	left: 20px;
+	top: 23px;
+	width: 200px;
+	height: 30px;
+	background-image: url(img/logo.gif);
+	background-repeat: no-repeat;
+}
+
+.headerblock .status
+{
+	position: absolute;
+	left: 220px;
+	top: 10px;
+	height: 50px;
+	width: 350px;
+	background-color: #222;
+}
+
+.headerblock .status .clock
+{
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	font: 20px Mono, Monospaced, Courier New;
+}
+
+.headerblock .status .loopinfo
+{
+	position: absolute;
+	left: 130px;
+	top: 5px;
+}
+
+.headerblock .status .buttons
+{
+	position: absolute;
+	left: 200px;
+	top: 15px;
+}
+
+.headerblock .status .buttons a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.mainblock
+{
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	bottom: 20px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.mainblock .innermainblock
+{
+	padding: 20px;
+}
+
+.footerblock
+{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	height: 20px;
+	background-color: #111;
+	background-image: url(img/footerbackground.gif);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.toolbar
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.toolbar li
+{
+	float: left;
+	display: block;
+	margin: 0 10px 0 0;
+	padding: 0;
+	height: 30px;
+	vertical-align: middle;
+}
+
+ul.toolbar li span
+{
+	display: block;
+	margin: 12px 0;
+	color: #fff;
+}
+
+ul.toolbar li big
+{
+	display: block;
+	margin: 11px 0;
+	font-weight: bold;
+}
+
+ul.toolbar li span a
+{
+	color: #f80;
+	text-decoration: none;
+}
+
+ul.toolbar li select,
+ul.toolbar li input
+{
+	margin: 8px 0;
+}
+
+ul.toolbar li.last
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+
+
+.default-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.default-content .default-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.default-content .default-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+.default-content .default-body .inner
+{
+	padding: 20px;
+}
+
+

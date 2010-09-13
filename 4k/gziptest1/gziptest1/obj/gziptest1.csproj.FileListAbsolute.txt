@@ -1,0 +1,14 @@
+C:\work\4k\gziptest1\gziptest1\bin\Debug\gziptest1.exe
+C:\work\4k\gziptest1\gziptest1\bin\Debug\gziptest1.pdb
+C:\work\4k\gziptest1\gziptest1\obj\Debug\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\gziptest1\obj\Debug\gziptest1.Properties.Resources.resources
+C:\work\4k\gziptest1\gziptest1\obj\Debug\gziptest1.csproj.GenerateResource.Cache
+C:\work\4k\gziptest1\gziptest1\obj\Debug\gziptest1.exe
+C:\work\4k\gziptest1\gziptest1\obj\Debug\gziptest1.pdb
+C:\work\4k\gziptest1\gziptest1\bin\Release\gziptest1.exe
+C:\work\4k\gziptest1\gziptest1\bin\Release\gziptest1.pdb
+C:\work\4k\gziptest1\gziptest1\obj\Release\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\gziptest1\obj\Release\gziptest1.Properties.Resources.resources
+C:\work\4k\gziptest1\gziptest1\obj\Release\gziptest1.csproj.GenerateResource.Cache
+C:\work\4k\gziptest1\gziptest1\obj\Release\gziptest1.exe
+C:\work\4k\gziptest1\gziptest1\obj\Release\gziptest1.pdb

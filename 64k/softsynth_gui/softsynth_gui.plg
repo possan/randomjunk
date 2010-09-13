@@ -1,0 +1,43 @@
+--------------------Configuration: softsynth_gui - Win32 Release--------------------
+Begining build with project "E:\prj64k\softsynth_gui\softsynth_gui.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/softsynth_gui.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x41d /fo"Release/Script2.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Release/softsynth_gui.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/softsynth_gui.pdb" /machine:I386 /out:"Release/softsynth_gui.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4F2.tmp" with contents </nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/softsynth_gui.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\prj64k\softsynth_gui\dlg_play.cpp"
+>
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4F2.tmp" 
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4F3.tmp" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/softsynth_gui.pdb" /machine:I386 /out:"Release/softsynth_gui.exe" 
+..\softsynth\Release\ss_env.obj
+..\softsynth\Release\ss_generate.obj
+..\softsynth\Release\ss_main.obj
+.\Release\cust_env.obj
+.\Release\cust_shape.obj
+.\Release\cust_slider.obj
+.\Release\cust_waveout.obj
+.\Release\dlg_loadsave.obj
+.\Release\dlg_main.obj
+.\Release\dlg_play.obj
+.\Release\main.obj
+.\Release\misc_common.obj
+.\Release\random.obj
+.\Release\Script2.res
+C:\devstudio\VC\lib\COMCTL32.LIB
+..\..\sdk\psdk\Lib\WinMM.Lib
+..\softsynth\Release\ss_unpack.obj
+..\softsynth\Release\ss_pack.obj>
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4F3.tmp" 
+Compiling...
+dlg_play.cpp
+Linking...
+
+
+
+softsynth_gui.exe - 0 error(s), 0 warning(s)

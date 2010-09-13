@@ -1,0 +1,138 @@
+<html>
+<head>
+
+	<script type="text/javascript" src="js/prototype.js"></script>
+
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+
+	<link rel="Stylesheet" href="seq.css" />
+	
+	<script type="text/javascript" src="common.js"></script>
+
+	<script type="text/javascript" src="pattern.js"></script>
+
+	<script type="text/javascript"> 
+
+	</script>
+
+</head>
+<body class="seq" onload="initPatternView();">
+	<div class="headerblock">
+		<div class="logo">
+		</div>
+		<div class="status">
+			<div class="clock">
+				1:2:3:4
+			</div>
+			<div class="loopinfo">
+				LOOP-ON<br />
+				3:3:1<br />
+				3:3:3<br />
+				
+			</div>
+			<div class="playstate">
+			</div>
+			<div class="buttons">
+				<a href="#">RWD</a> | <a href="#">PLAY</a> | <a href="#">STOP</a> | <a href="#">FWD</a>
+			</div>
+		</div>
+		<div class="tabs">
+			<ul>
+				<li><a href="jam.htm"><span>JAM</span></a></li>
+				<li><a href="song.htm"><span>SNG</span></a> </li>
+				<li class="selected"><a href="pattern.htm"><span>PAT</span></a> </li>
+				<li><a href="instruments.htm"><span>INS</span></a> </li>
+				<li><a href="settings.htm"><span>SET</span></a> </li>
+				<li class="last"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="patterneditor-content">
+				<div class="halfheight">
+					<div class="grouptop">
+						<ul class="toolbar">
+							<li><big>Pattern editor</big></li>
+							<li></li>
+							<li><span>Name:</span> </li>
+							<li>
+								<input type="text" id="patternname" value="Min Pattern!" onchange="renamePattern(event);" />
+							</li>
+							<li></li>
+							<li><span>Instrument:</span> </li>
+							<li>
+								<select id="instrumentdropdown" onchange="changeInstrument(event);">
+									<option>00 - Bass</option>
+									<option>01 - Synth</option>
+									<option>02 - Drums 1</option>
+								</select>
+							</li>
+							<li></li>
+							<li><span>Pattern:</span> </li>
+							<li>
+								<select id="patterndropdown" onchange="changePattern(event);">
+									<option>00 - Bass</option>
+									<option>01 - Bass 2</option>
+									<option>02 - Bass 3</option>
+								</select>
+							</li>
+							<li><span><a href="javascript:cloneThisPattern();">Clone this pattern</a> | <a href="javascript:createNewPattern();">
+								New a pattern</a> </span></li>
+							<li></li>
+							<li><span>Duration (beats):</span> </li>
+							<li>
+								<input type="text" id="duration" style="width:50px;" onchange="changeDuration(event);"></input>
+							</li>
+							<li class="spacer"></li>
+							<li><span>Zoom:</span> </li>
+							<li>
+								<select id="zoom" onchange="changeZoom(event);">
+									<option>X</option>
+								</select>
+							</li>
+							<li class="last"></li>
+						</ul>
+					</div>
+					<div class="groupbody">
+						<div class="patterneditor-notes">
+							<div id="notesplaceholder">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="halfheight">
+					<div class="grouptop">
+						<ul class="toolbar">
+							<li><big>Automation</big></li>
+							<li></li>
+							<li><span>Channel:</span> </li>
+							<li>
+								<select id="Select1" onchange="changeInstrument(event);">
+									<option>00 - Bass</option>
+									<option>01 - Synth</option>
+									<option>02 - Drums 1</option>
+								</select>
+							</li>
+							<li><span><a href="javascript:cloneThisPattern();">Copy automation</a> | <a href="javascript:createNewPattern();">
+								Paste automation</a> | <a href="javascript:removeThisPattern();">Remove automation</a>
+								| </span></li>
+							<li></li>
+							<li class="last"></li>
+						</ul>
+					</div>
+					<div class="groupbody">
+						<div class="patterneditor-automation">
+							<div id="automationplaceholder">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+		<span id="statustext"></span>
+	</div>
+</body>
+</html>

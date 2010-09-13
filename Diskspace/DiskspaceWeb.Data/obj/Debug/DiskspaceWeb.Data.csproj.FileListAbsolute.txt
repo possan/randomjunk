@@ -1,0 +1,6 @@
+c:\work\Diskspace\DiskspaceWeb.Data\bin\Debug\DiskspaceWeb.Data.dll
+c:\work\Diskspace\DiskspaceWeb.Data\bin\Debug\DiskspaceWeb.Data.pdb
+c:\work\Diskspace\DiskspaceWeb.Data\obj\Debug\ResolveAssemblyReference.cache
+c:\work\Diskspace\DiskspaceWeb.Data\obj\Debug\DiskspaceWeb.Data.dll
+c:\work\Diskspace\DiskspaceWeb.Data\obj\Debug\DiskspaceWeb.Data.pdb
+c:\work\Diskspace\DiskspaceWeb.Data\bin\Debug\DiskspaceWeb.Data.dll.config

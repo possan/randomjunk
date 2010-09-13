@@ -1,0 +1,53 @@
+MINIFMOD 1.1, Copyright Firelight Multimedia, 1999-2000.
+--------------------------------------------------------
+
+Version 1.1
+--------------
+- New volume ramping mixer
+- 8k footprint instead of 8.5k
+- MSVC 5.0 support added
+- small harmonic noise removed from mixing routine = clearer sound.
+- Added sample load callback, when the XM loader loads samples, it calls your callback and 
+  you can fill in the data if you like (you might have a better compression algorithm)
+- XM porta between instrument samples fixed.
+- removed dependancy on stdlib func strncmp so you dont have to write your own if you are replacing C stdlib.
+
+Version 1.0
+--------------
+- Only 8k footprint in exe after being compressed with UPX.  (maybe less if you dont call info functions)
+- Statically linkable .lib.
+- XM only
+- Windows Multimedia Wave Out only.  (140ms latency)
+- FPU Interpolating, volume ramping mixer only.
+- Only the basic API functions needed to play and synchronize a mod.
+- Tremolo has been disabled
+- MSVC 6 only 
+- No file routines, you have to supply your own using FSOUND_SetFile
+ 
+Instructions
+------------
+- See MAIN.CPP for an example of how to use MINIFMOD.
+- You MUST set file IO callbacks for FMOD to use.  This is a very flexible way to
+  work, and saves having multiple file routines for file, memory or wad loading!
+  Just rip the sample if you dont know what it is about, or get the full FMOD 3 API and
+  read the documentation entries on the functions in the help file provided.
+- There are no error codes.  All functions return true or false, and it should be obvious why they fail.
+- FSOUND_Init will fail if no IO callbacks are set.
+- Compile your exe with SIZE optimizations ON.
+- Compress your exe with UPX.  It is the best exe packer around.  It is at http://www.nexus.hu/upx/
+- Pass a callback function to FMUSIC_LoadSong or NULL.  This will allow you to get a 
+  callback when each sample is loaded in a song.  Here you can then fill in the data for
+  the sample yourself.  Note if you set callbacks, the samples are not loaded from file,
+  and will be just silence if not filled in.
+- If rewriting C standard libraries you need to supply pow() for fmod music playback routine.
+
+Legal
+-----
+MINIFMOD is free and can be stolen ripped and hacked any way you like i dont care.
+
+Questions?
+----------
+write to support@fmod.org
+
+Thanks
+Firelight Multimedia.

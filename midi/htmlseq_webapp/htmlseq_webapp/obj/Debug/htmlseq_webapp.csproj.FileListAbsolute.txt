@@ -1,0 +1,7 @@
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\bin\htmlseq_webapp.dll
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\bin\htmlseq_webapp.pdb
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\obj\Debug\ResolveAssemblyReference.cache
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\obj\Debug\htmlseq_webapp.dll
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\obj\Debug\htmlseq_webapp.pdb
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\bin\MidiSequencer.dll
+c:\work\midi\htmlseq_webapp\htmlseq_webapp\bin\MidiSequencer.pdb

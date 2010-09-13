@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>WE!J</title>
+
+	<script type="text/javascript" src="js/prototype.js"></script>
+
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+
+	<link rel="stylesheet" href="seq.css" />
+	<link rel="stylesheet" href="instruments.css" />
+
+	<script type="text/javascript" src="common.js"></script>
+
+	<script type="text/javascript" src="instruments.js"></script>
+
+  <script type="text/javascript" src="../mididevices.jsdata"></script>
+  <script type="text/javascript" src="../instruments.jsdata"></script>
+
+</head>
+<body class="seq" onload="initInstrumentsView();">
+	<div class="headerblock" id="headerblock">
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="instrumenteditor-content">
+				<div class="instrumenteditor-top">
+					<ul class="toolbar">
+						<li><big>Instrument editor</big></li>
+						<li></li>
+						<li><span>Instrument:</span> </li>
+						<li>
+							<select id="instrumentdropdown" onchange="changeInstrument(event);">
+								<option>Loading...</option>
+							</select>
+						</li>
+						<li><span><a href="javascript:createNewInstrument();">New instrument</a> | <a href="javascript:removeCurrentInstrument();">
+							Remove instrument</a></span></li>
+						<li></li>
+						<li class="last"></li>
+					</ul>
+				</div>
+				<div class="instrumenteditor-body">
+					<div class="inner">
+						<p>
+							Name:<br />
+							<input id="insname" onchange="propertyChanged(event);" />
+						</p>
+						<p>
+							Instrument template:<br />
+							<input id="instype" onchange="propertyChanged(event);" />
+						</p>
+						<p>
+							MIDI Device:<br />
+							<input id="insdevice" onchange="propertyChanged(event);" />
+							<select id="devicelist"></select>
+						</p>
+						<p>
+							MIDI Channel:<br />
+							<input id="inschannel" onchange="propertyChanged(event);" />
+						</p>
+						<p>
+							MIDI Patch:<br />
+							<input id="inspatch" onchange="propertyChanged(event);" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+	</div>
+</body>
+</html>

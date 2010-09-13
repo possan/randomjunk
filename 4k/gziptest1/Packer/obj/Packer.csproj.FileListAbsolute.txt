@@ -1,0 +1,10 @@
+C:\work\4k\gziptest1\Packer\obj\Debug\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\Packer\obj\Debug\Packer.exe
+C:\work\4k\gziptest1\Packer\obj\Debug\Packer.pdb
+C:\work\4k\gziptest1\Packer.exe
+C:\work\4k\gziptest1\Packer.pdb
+C:\work\4k\gziptest1\Packer\bin\Release\Packer.exe
+C:\work\4k\gziptest1\Packer\bin\Release\Packer.pdb
+C:\work\4k\gziptest1\Packer\obj\Release\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\Packer\obj\Release\Packer.exe
+C:\work\4k\gziptest1\Packer\obj\Release\Packer.pdb

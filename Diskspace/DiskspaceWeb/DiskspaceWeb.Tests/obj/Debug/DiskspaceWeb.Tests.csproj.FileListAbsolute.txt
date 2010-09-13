@@ -1,0 +1,11 @@
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.Tests.dll.config
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.Tests.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.Tests.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\obj\Debug\ResolveAssemblyReference.cache
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\obj\Debug\DiskspaceWeb.Tests.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\obj\Debug\DiskspaceWeb.Tests.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.Data.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\DiskspaceWeb.Data.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb.Tests\bin\Debug\Norkay.Utilities.dll

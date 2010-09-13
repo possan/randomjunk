@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>WE!J</title>
+
+	<script type="text/javascript" src="js/prototype.js"></script>
+
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+
+	<link rel="Stylesheet" href="seq.css" />
+
+	<script type="text/javascript" src="common.js"></script>
+
+	<script type="text/javascript" src="settings.js"></script>
+
+</head>
+<body class="seq" onload="initSettingsView();">
+	<div class="headerblock" id="headerblock">
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="default-content">
+				<div class="default-top">
+					<ul class="toolbar">
+						<li><big>Settings</big></li>
+						<li></li>
+						<li class="last"></li>
+					</ul>
+				</div>
+				<div class="default-body">
+					<div class="inner">
+						<p>
+							BPM:<br />
+							<input type="text" id="bpm" onchange="timingChanged(event)" style="width: 60px;" />
+						</p>
+						<p>
+							Measures:<br />
+							<input type="text" id="measure1" onchange="timingChanged(event)" style="width: 30px;" />
+							/
+							<input type="text" id="measure2" onchange="timingChanged(event)" style="width: 30px;" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+	</div>
+</body>
+</html>

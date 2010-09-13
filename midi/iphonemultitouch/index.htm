@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name = "viewport" content = "user-scalable=no, width=device-width">
+<script>
+
+function iPhoneCheck()
+{
+	return navigator.userAgent.indexOf("iPhone") != -1;
+}
+
+function updateFromTouchEvent(event)
+{
+	for( var k=0; k<event.touches.length; k++ )
+	{
+		var touch = event.touches[k];
+		var x = touch.pageX;
+		var y = touch.pageY;
+		var el = document.getElementById( 'blob'+k );
+		el.style.left = (x-10)+'px';
+		el.style.top = (y-10)+'px';
+	}
+}
+
+
+function updateFromMouseEvent(event)
+{ 
+	var x = event.clientX;
+	var y = event.clientY;
+	var el = document.getElementById( 'blob0' );
+	el.style.left = (x-10)+'px';
+	el.style.top = (y-10)+'px';
+}
+
+function mouseDown(event)
+{
+	updateFromMouseEvent(event);
+	updateCanvas();
+}
+
+function mouseMove(event)
+{
+	// if( event.
+	// updateFromMouseEvent(event);
+	// updateCanvas();
+}
+
+function mouseUp(event)
+{
+	updateFromMouseEvent(event);
+	updateCanvas();
+}
+
+function touchStart(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchMove(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchEnd(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchCancel(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function updateCanvas()
+{	
+	var el = document.getElementById("can1");
+	var c = el.getContext("2d");
+	c.clearRect(0, 0, 320, 320);
+	// context.save();
+	// context.bezierCurveTo(this.cp.x, this.cp.y, m.x, m.y, m.x, m.y);  //make pretty curve, first two params =control pt
+
+	var b0e = document.getElementById('blob0');
+	var b1e = document.getElementById('blob1');
+	var b2e = document.getElementById('blob2');
+	var b0x = parseFloat( b0e.style.left )+10;
+	var b0y = parseFloat( b0e.style.top )+10;		
+	var b1x = parseFloat( b1e.style.left )+10;
+	var b1y = parseFloat( b1e.style.top )+10;		
+	var b2x = parseFloat( b2e.style.left )+10;
+	var b2y = parseFloat( b2e.style.top )+10;		
+	
+	var b012x = (b0x + b1x + b2x)/3.0;
+	var b012y = (b0y + b1y + b2y)/3.0;
+	
+	var b01x = (b0x + b1x)/2.0;
+	var b01y = (b0y + b1y)/2.0;
+	
+	c.lineWidth = 2;
+//	c.lineTo( b0x+100, b0y+100 );
+
+	c.strokeStyle = '#08f';	
+	c.beginPath();
+	c.moveTo( b0x, b0y );
+	c.quadraticCurveTo(b012x, b012y, b1x, b1y); 
+	c.closePath();
+	c.stroke();
+
+	c.strokeStyle = '#f08';	
+	c.beginPath();
+	c.moveTo( b1x, b1y );
+	c.quadraticCurveTo(b012x, b012y, b2x, b2y); 
+	c.closePath();
+	c.stroke();
+
+	c.strokeStyle = '#8f0';	
+	c.beginPath();
+	c.moveTo( b2x, b2y );
+	c.quadraticCurveTo(b012x, b012y, b0x, b0y); 
+	c.closePath();
+	c.stroke();
+
+}
+
+function init()
+{
+	var el1 = document.getElementById( 'test1' );
+	if( iPhoneCheck() )
+	{
+		el1.addEventListener("touchstart", touchStart, false);
+		el1.addEventListener("touchmove", touchMove, true);
+		el1.addEventListener("touchend", touchEnd, false);
+		el1.addEventListener("touchcancel", touchCancel, false);
+	}
+	else
+	{
+		el1.addEventListener("mousedown", mouseDown, false);
+		el1.addEventListener("mousemove", mouseMove, false);
+		el1.addEventListener("mouseup", mouseUp, false);
+	}
+	updateCanvas();
+}
+
+</script>
+</head>
+<body onload="init();" style="border:0; padding:0; margin:0; background-color:#fff; overflow:hidden;" scrolling="no" orient="landscape">
+	
+	<div style="position: absolute; width: 320px; height: 320px;">
+	<canvas id="can1" width="320" height="320"></canvas>
+	</div>
+
+	<div style="position: absolute; left: 30px; top: 50px; width: 20px; height: 20px; background-color: #f00;"
+		id="blob0">
+	</div>
+	<div style="position: absolute; left: 220px; top: 100px; width: 20px; height: 20px; background-color: #0f0;"
+		id="blob1">
+	</div>
+	<div style="position: absolute; left: 140px; top: 200px; width: 20px; height: 20px; background-color: #00f;"
+		id="blob2">
+	</div>
+	
+	<div style="position: absolute; width: 320px; height: 320px; border:1px dotted #666; z-index:99;"
+		id="test1">
+	</div>
+	
+</body>
+</html>

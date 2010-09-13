@@ -1,0 +1,250 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOG DISCARDABLE  0, 0, 560, 361
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Der musikomat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_O1A,"CustomEnvelope",0x0,36,16,92,48
+    CONTROL         "Custom1",IDC_O1P,"CustomEnvelope",0x0,132,16,92,48
+    CONTROL         "Custom1",IDC_O1C,"CustomEnvelope",0x0,228,16,92,48
+    GROUPBOX        "Disk op:",IDC_STATIC,432,296,124,60,BS_LEFT
+    CONTROL         "Custom1",IDC_O1R,"CustomEnvelope",0x0,324,16,92,48
+    CONTROL         "Custom1",IDC_O2A,"CustomEnvelope",0x0,36,68,92,48
+    CONTROL         "Custom1",IDC_O3A,"CustomEnvelope",0x0,36,120,92,48
+    CONTROL         "Custom1",IDC_O2P,"CustomEnvelope",0x0,132,68,92,48
+    CONTROL         "Custom1",IDC_O3P,"CustomEnvelope",0x0,132,120,92,48
+    CONTROL         "Custom1",IDC_O2C,"CustomEnvelope",0x0,228,68,92,48
+    CONTROL         "Custom1",IDC_O3C,"CustomEnvelope",0x0,228,120,92,48
+    CONTROL         "Custom1",IDC_O2R,"CustomEnvelope",0x0,324,68,92,48
+    CONTROL         "Custom1",IDC_O3R,"CustomEnvelope",0x0,324,120,92,48
+    CONTROL         "Custom1",IDC_O4R,"CustomEnvelope",0x0,324,172,92,48
+    CONTROL         "Custom1",IDC_O4C,"CustomEnvelope",0x0,228,172,92,48
+    CONTROL         "Custom1",IDC_O4P,"CustomEnvelope",0x0,132,172,92,48
+    CONTROL         "Custom1",IDC_O4A,"CustomEnvelope",0x0,36,172,92,48
+    LISTBOX         IDC_SEQ,440,16,108,180,LBS_OWNERDRAWFIXED | 
+                    LBS_EXTENDEDSEL | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "+1",IDC_SEQ_PLUS,440,200,24,11
+    PUSHBUTTON      "-1",IDC_SEQ_MINUS,464,200,24,11
+    PUSHBUTTON      "slide",IDC_SEQ_SLIDE,508,200,20,24
+    PUSHBUTTON      "acc",IDC_SEQ_ACCENT,528,200,20,24
+    PUSHBUTTON      "&Load",IDC_LOAD,512,308,32,16
+    PUSHBUTTON      "&Save",IDC_SAVE,440,308,32,16
+    PUSHBUTTON      "&Play",IDC_PLAY,440,224,56,16
+    PUSHBUTTON      "S&ave...",IDC_SAVEAS,476,308,32,16
+    GROUPBOX        "Delay",IDC_STATIC,108,224,156,52
+    GROUPBOX        "Distortion",IDC_STATIC,272,224,152,52
+    LTEXT           "Thru:",IDC_STATIC,116,236,18,8
+    LTEXT           "Feedback:",IDC_STATIC,116,248,35,8
+    LTEXT           "Delay time:",IDC_STATIC,116,260,36,8
+    LTEXT           "Thru:",IDC_STATIC,280,236,18,8
+    LTEXT           "Threshold:",IDC_STATIC,280,248,34,8
+    LTEXT           "Amount:",IDC_STATIC,280,260,27,8
+    CONTROL         "O2 Uses O1 Envs.",IDC_O2USESO1,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,12,236,75,10
+    CONTROL         "O3 Uses O1 Envs.",IDC_O3USESO1,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,12,248,75,10
+    CONTROL         "O4 Uses O1 Envs.",IDC_O4USESO1,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,12,260,75,10
+    LTEXT           "Amplitude Envelope:",IDC_STATIC,52,4,66,8
+    LTEXT           "Pitch Envelope:",IDC_STATIC,148,4,51,8
+    LTEXT           "Cutoff Envelope:",IDC_STATIC,244,4,54,8
+    LTEXT           "Resonance Envelope:",IDC_STATIC,340,4,72,8
+    LTEXT           "O1:",IDC_STATIC,12,16,12,8
+    LTEXT           "O2:",IDC_STATIC,12,68,12,8
+    LTEXT           "O3:",IDC_STATIC,12,120,12,8
+    LTEXT           "O4:",IDC_STATIC,12,172,12,8
+    CONTROL         "Custom1",IDC_WAVEOUT,"CustomWaveout",0x0,116,292,300,58
+    CONTROL         "Custom2",IDC_DELAY_THRU,"CustomSlider",WS_TABSTOP,156,
+                    236,100,8
+    CONTROL         "Custom2",IDC_DELAY_FEEDBACK,"CustomSlider",WS_TABSTOP,
+                    156,248,100,8
+    CONTROL         "Custom2",IDC_DELAY_TIME,"CustomSlider",WS_TABSTOP,156,
+                    260,100,8
+    CONTROL         "Custom2",IDC_DIST_AMOUNT,"CustomSlider",WS_TABSTOP,316,
+                    260,100,8
+    CONTROL         "Custom2",IDC_DIST_THRESHOLD,"CustomSlider",WS_TABSTOP,
+                    316,248,100,8
+    CONTROL         "Custom2",IDC_DIST_THRU,"CustomSlider",WS_TABSTOP,316,
+                    236,100,8
+    PUSHBUTTON      "&Loop",IDC_PLAYLOOP,496,224,52,16
+    PUSHBUTTON      "note",IDC_SEQ_NOTE,488,200,20,24
+    PUSHBUTTON      "+12",IDC_SEQ_PLUSO,440,211,24,12
+    PUSHBUTTON      "-12",IDC_SEQ_MINUSO,464,211,24,12
+    GROUPBOX        "Waveform:",IDC_STATIC,108,280,316,76
+    GROUPBOX        "Sequencer:",IDC_STATIC,432,4,124,288,BS_LEFT
+    CONTROL         "Custom2",IDC_O4S,"CustomShape",WS_TABSTOP,8,180,20,40
+    CONTROL         "Custom2",IDC_O3S,"CustomShape",WS_TABSTOP,8,128,20,40
+    CONTROL         "Custom2",IDC_O2S,"CustomShape",WS_TABSTOP,8,76,20,40
+    CONTROL         "Custom2",IDC_O1S,"CustomShape",WS_TABSTOP,8,24,20,40
+    PUSHBUTTON      "&Gen",IDC_GENLOOP,496,240,52,16
+    COMBOBOX        IDC_MIXSTEP1,44,280,48,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MIXSTEP2,44,296,48,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MIXSTEP3,44,312,48,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "O1, O2",IDC_STATIC,12,284,24,8
+    LTEXT           "O3 ,O4",IDC_STATIC,12,300,24,8
+    LTEXT           "final mix",IDC_STATIC,12,316,26,8
+    GROUPBOX        "Mixing",IDC_STATIC,4,224,96,108
+    LTEXT           "BPM:",IDC_STATIC,440,260,18,8
+    PUSHBUTTON      "&Stop",IDC_STOP,440,240,56,16
+    LTEXT           "VOL:",IDC_STATIC,440,276,17,8
+    CONTROL         "Custom2",IDC_BPM,"CustomSlider",WS_TABSTOP,464,260,84,8
+    CONTROL         "Custom2",IDC_VOL,"CustomSlider",WS_TABSTOP,464,276,84,8
+    PUSHBUTTON      "&New",IDC_NEW,440,332,32,16
+    PUSHBUTTON      "SHAKE",IDC_SHAKE,476,332,32,16
+    PUSHBUTTON      "RAND",IDC_RANDOM,512,332,32,16
+    ICON            IDI_ICON1,IDC_STATIC,4,336,20,20
+    LTEXT           "I'd like one of those!",IDC_STATIC,28,348,64,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 553
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 355
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "images\\5x5 ikoner copy.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_ENVPOPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "apa"
+    BEGIN
+        MENUITEM "Loop start",                  ID_LOOPSTART
+        MENUITEM "Loop end",                    ID_LOOPEND
+        MENUITEM "Sustain",                     ID_SUSTAIN
+        MENUITEM "No Loop start",               ID_NOLOOPSTART
+        MENUITEM "No Loop end",                 ID_NOLOOPEND
+        MENUITEM "No Sustain",                  ID_NOSUSTAIN
+        MENUITEM SEPARATOR
+        MENUITEM "Fit",                         ID_FIT
+        MENUITEM "Zoom Out",                    ID_ZOOMOUT
+        MENUITEM "Zoom In",                     ID_ZOOMIN
+        MENUITEM "Pan Left",                    ID_PANLEFT
+        MENUITEM "Pan Right",                   ID_PANRIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Insert new dutt",             ID_INSERTDUTT
+        MENUITEM "Delete last dutt",            ID_DELETEDUTT
+        MENUITEM SEPARATOR
+        MENUITEM "0.0",                         ID_APA_00
+        MENUITEM "0.5",                         ID_APA_05
+        MENUITEM "1.0",                         ID_APA_10
+        MENUITEM SEPARATOR
+        MENUITEM "Smooth",                      ID_SMOOTH
+        MENUITEM "Sharpen",                     ID_SHARPEN
+        MENUITEM "No Curve - Corner",           ID_CORNER
+        MENUITEM "Curve - Spline",              ID_SPLINE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "images\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "images\\icon1.ico"
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

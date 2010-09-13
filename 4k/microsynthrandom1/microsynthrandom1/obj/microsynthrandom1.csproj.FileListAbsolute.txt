@@ -1,0 +1,9 @@
+c:\work\4k\microsynthrandom1\microsynthrandom1\bin\Debug\microsynthrandom1.exe
+c:\work\4k\microsynthrandom1\microsynthrandom1\bin\Debug\microsynthrandom1.pdb
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\ResolveAssemblyReference.cache
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.Form1.resources
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.Properties.Resources.resources
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.csproj.GenerateResource.Cache
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.exe
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.pdb
+c:\work\4k\microsynthrandom1\microsynthrandom1\obj\Debug\microsynthrandom1.StepContrl.resources

@@ -1,0 +1,235 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+.songeditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.songeditor-content .songeditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.songeditor-content .songeditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.songeditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.songeditor-content .songeditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.songeditor-content .songeditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+.songeditor-grid
+{
+	margin: 10px;
+	position: relative;
+
+}
+
+.songeditor-grid ul.songtracks
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.songeditor-grid ul.songtracks li
+{
+	position: relative;
+	background-color: #222;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.songeditor-grid ul.songtracks li.odd
+{
+	background-color: #333;
+}
+
+.songeditor-grid ul.songtracks li.head
+{
+	background-color: #111;
+}
+
+.songeditor-grid ul.songtracks li div
+{
+	background-color: #444;
+	width: 100px;
+	height: 20px;
+}
+
+.songeditor-grid ul.songtracks li.odd div
+{
+	background-color: #555;
+}
+
+.songeditor-grid ul.songtracks li.head div
+{
+	background-color: #333;
+}
+
+.songeditor-grid ul.songtracks li div span
+{
+	position: absolute;
+	left: 6px;
+	top: 3px;
+}
+
+.songeditor-grid .r .h span,
+.songeditor-grid .or .h span
+{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	color: #fff;
+}
+
+.songeditor-grid .r
+{
+	background-color: #222;
+}
+
+.songeditor-grid .or
+{
+	background-color: #333;
+}
+
+.songeditor-grid .r .h
+{
+	background-color: #444;
+}
+
+.songeditor-grid .or .h
+{
+	background-color: #555;
+} 
+
+.songeditor-grid .b
+{
+	position: absolute;
+	height: 20px;
+	background-color: #f80;
+}
+
+.songeditor-grid .b div
+{
+	display: block;   
+	overflow: hidden;
+	padding: 3px 5px;
+	color: #000;
+}
+
+.songeditor-grid .b div span
+{
+	
+}
+
+.songeditor-grid .l
+{
+	border-left: 1px dotted #777;
+	color: #777;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.songeditor-grid .p1
+{
+	border-left: 1px dotted #fff;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.songeditor-grid .p2
+{
+	border-left: 1px dotted #0f0;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+.songeditor-grid .p3
+{
+	border-left: 1px dotted #f44;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+

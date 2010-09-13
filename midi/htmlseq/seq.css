@@ -1,0 +1,755 @@
+body.seq
+{
+	background-color: #222;
+	color: #fff;
+	font: 8pt Helvetica, Arial, sans-serif;
+	overflow: hidden;
+}
+
+a
+{
+	color: #f80;
+	text-decoration: none;
+}
+
+.headerblock
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 76px;
+	background-color: #111;
+	background-image: url(img/headerbackground.gif);
+}
+
+.headerblock .tabs
+{
+	position: absolute;
+	right: 20px;
+	top: 0px; 
+}
+
+.headerblock .tabs ul
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.headerblock .tabs ul li
+{
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-image: url(img/tab0.gif);
+	background-repeat: no-repeat;
+}
+
+.headerblock .tabs ul li a
+{
+	display: block;
+	width: 77px;
+	height: 76px;
+	position: relative;
+	text-decoration: none;
+}
+
+.headerblock .tabs ul li a span
+{
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 45px 0 0 0;
+	font: 15px Helvetica, Arial;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+.headerblock .tabs ul li.selected
+{ 
+	background-image: url(img/tab1.gif); 
+}
+
+
+.headerblock .tabs ul li.last
+{
+	display: block;
+	clear: both;
+	float: left;
+}
+
+.headerblock .logo
+{
+	position: absolute;
+	left: 20px;
+	top: 23px;
+	width: 200px;
+	height: 30px;
+	background-image: url(img/logo.gif);
+	background-repeat: no-repeat;
+}
+
+.headerblock .status
+{
+	position: absolute;
+	left: 220px;
+	top: 10px;
+	height: 50px;
+	width: 350px;
+	background-color: #222;
+}
+
+.headerblock .status .clock
+{
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	font: 20px Mono, Monospaced, Courier New;
+}
+
+.headerblock .status .loopinfo
+{
+	position: absolute;
+	left: 130px;
+	top: 5px;
+}
+
+.headerblock .status .buttons
+{
+	position: absolute;
+	left: 200px;
+	top: 15px;
+}
+
+.headerblock .status .buttons a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.mainblock
+{
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	bottom: 20px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.mainblock .innermainblock
+{
+	padding: 20px;
+}
+
+.footerblock
+{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	height: 20px;
+	background-color: #111;
+	background-image: url(img/footerbackground.gif);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.toolbar
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.toolbar li
+{
+	float: left;
+	display: block;
+	margin: 0 10px 0 0;
+	padding: 0;
+	height: 30px;
+	vertical-align: middle;
+}
+
+ul.toolbar li span
+{
+	display: block;
+	margin: 12px 0;
+	color: #fff;
+}
+
+ul.toolbar li big
+{
+	display: block;
+	margin: 11px 0;
+	font-weight: bold;
+}
+
+ul.toolbar li span a
+{
+	color: #f80;
+	text-decoration: none;
+}
+
+ul.toolbar li select,
+ul.toolbar li input
+{
+	margin: 8px 0;
+}
+
+ul.toolbar li.last
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+
+
+
+
+
+.songeditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.songeditor-content .songeditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.songeditor-content .songeditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+
+
+
+
+.patterneditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.patterneditor-content .patterneditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.patterneditor-content .patterneditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: hidden;
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+.instrumenteditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.instrumenteditor-content .instrumenteditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.instrumenteditor-content .instrumenteditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+.instrumenteditor-content .instrumenteditor-body .inner
+{
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.songeditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.songeditor-content .songeditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.songeditor-content .songeditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.patterneditor-notes
+{
+	height: 59%;
+	margin: 0 0 5px 0;
+	overflow: auto;
+}
+
+.patterneditor-automation
+{
+	height: 40%;
+	overflow: auto;
+}
+
+
+
+.patterneditor-grid
+{
+	margin: 10px;
+	position: relative;
+
+}
+
+.patterneditor-grid ul.notelines
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.notelines li
+{
+	position: relative;
+	background-color: #222;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.notelines li.odd
+{
+	background-color: #333;
+}
+
+.patterneditor-grid ul.notelines li div
+{
+	background-color: #444;
+	width: 100px;
+	height: 20px;
+}
+
+.patterneditor-grid ul.notelines li.odd div
+{
+	background-color: #555;
+}
+
+.patterneditor-grid ul.notelines li div span
+{
+	position: absolute;
+	left: 6px;
+	top: 3px;
+}
+
+.patterneditor-grid .r .h span,
+.patterneditor-grid .or .h span
+{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	color: #fff;
+}
+
+.patterneditor-grid .r
+{
+	background-color: #222;
+}
+
+.patterneditor-grid .or
+{
+	background-color: #333;
+}
+
+.patterneditor-grid .r .h
+{
+	background-color: #444;
+}
+
+.patterneditor-grid .or .h
+{
+	background-color: #555;
+}
+
+.patterneditor-grid .r .t,
+.patterneditor-grid .or .t
+{
+}
+
+.patterneditor-grid .b
+{
+	position: absolute;
+	height: 20px;
+	background-color: #f80;
+}
+
+.patterneditor-grid .b div
+{
+	display: block;   
+	overflow: hidden;
+	padding: 3px 5px;
+	color: #000;
+}
+
+.patterneditor-grid .b div span
+{
+	
+}
+
+.patterneditor-grid .l
+{
+	border-left: 1px dotted #000;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.patterneditor-grid .p
+{
+	border-left: 1px dotted #fff;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.patterneditor-grid ul.automationlines
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.automationlines li
+{
+	position: relative;
+	background-color: #222;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.automationlines li.odd
+{
+	background-color: #333;
+}
+
+.patterneditor-grid ul.automationlines li div.head
+{
+	background-color: #444;
+	width: 100px;
+	height: 200px;
+}
+
+.patterneditor-grid ul.automationlines li div.head select
+{
+	width: 80px;
+}
+
+.patterneditor-grid ul.automationlines li.odd div
+{
+	background-color: #555;
+}
+
+.patterneditor-grid ul.automationlines li div span
+{
+	position: absolute;
+	left: 6px;
+	top: 3px;
+}
+
+.patterneditor-grid ul.automationlines li div.track
+{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	height: 200px;
+}
+
+.patterneditor-grid ul.automationlines li div.track div.p
+{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #8f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.songeditor-grid
+{
+	margin: 10px;
+	position: relative;
+
+}
+
+.songeditor-grid ul.songtracks
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.songeditor-grid ul.songtracks li
+{
+	position: relative;
+	background-color: #222;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.songeditor-grid ul.songtracks li.odd
+{
+	background-color: #333;
+}
+
+.songeditor-grid ul.songtracks li.head
+{
+	background-color: #111;
+}
+
+.songeditor-grid ul.songtracks li div
+{
+	background-color: #444;
+	width: 100px;
+	height: 20px;
+}
+
+.songeditor-grid ul.songtracks li.odd div
+{
+	background-color: #555;
+}
+
+.songeditor-grid ul.songtracks li.head div
+{
+	background-color: #333;
+}
+
+.songeditor-grid ul.songtracks li div span
+{
+	position: absolute;
+	left: 6px;
+	top: 3px;
+}
+
+.songeditor-grid .r .h span,
+.songeditor-grid .or .h span
+{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	color: #fff;
+}
+
+.songeditor-grid .r
+{
+	background-color: #222;
+}
+
+.songeditor-grid .or
+{
+	background-color: #333;
+}
+
+.songeditor-grid .r .h
+{
+	background-color: #444;
+}
+
+.songeditor-grid .or .h
+{
+	background-color: #555;
+} 
+
+.songeditor-grid .b
+{
+	position: absolute;
+	height: 20px;
+	background-color: #f80;
+}
+
+.songeditor-grid .b div
+{
+	display: block;   
+	overflow: hidden;
+	padding: 3px 5px;
+	color: #000;
+}
+
+.songeditor-grid .b div span
+{
+	
+}
+
+.songeditor-grid .l
+{
+	border-left: 1px dotted #777;
+	color: #777;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.songeditor-grid .p1
+{
+	border-left: 1px dotted #fff;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.songeditor-grid .p2
+{
+	border-left: 1px dotted #0f0;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+.songeditor-grid .p3
+{
+	border-left: 1px dotted #f44;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}

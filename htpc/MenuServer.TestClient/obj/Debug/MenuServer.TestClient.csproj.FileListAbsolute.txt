@@ -1,0 +1,9 @@
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\ResolveAssemblyReference.cache
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.Form1.resources
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.Properties.Resources.resources
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.csproj.GenerateResource.Cache
+c:\work\htpc2\MenuServer.TestClient\bin\Debug\MenuServer.TestClient.exe
+c:\work\htpc2\MenuServer.TestClient\bin\Debug\MenuServer.TestClient.pdb
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.exe
+c:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.pdb
+C:\work\htpc2\MenuServer.TestClient\obj\Debug\MenuServer.TestClient.Menus.RandomColorPage.resources

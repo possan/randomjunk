@@ -1,0 +1,169 @@
+﻿
+
+
+
+
+
+.jamtracks
+{
+}
+
+.jamtracks .track
+{
+	width: 150px;
+	float: left;
+}
+
+.jamtracks .track .inner
+{
+	background-color: #333;
+	margin: 0 5px 5px 0;
+	padding: 10px;
+} 
+
+.jamtracks .track .inner .title 
+{
+	margin: 0 0 5px 0;
+}
+
+.jamtracks .track .inner .title input
+{
+	background-color: #555;
+	border: 0;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+	
+.jamtracks .track .inner .volume 
+{
+	height: 120px;
+	position: relative;
+}
+	
+.jamtracks .track .inner .volume .track
+{
+	position: absolute;
+	left: 0px;
+	top :0px;
+	width: 30px;
+	height: 100px;
+	background-color: #411;
+}
+
+.jamtracks .track .inner .volume .trackmarker
+{
+	position: absolute;
+	left: 5px;
+	top :100px;
+	width: 20px;
+	height: 0px;
+	background-color: #e44;
+}
+	
+.jamtracks .track .inner .playing 
+{
+	margin: 0 0 10px 0;
+}
+
+.jamtracks .track .inner .playing a
+{
+	color: #0f0;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.jamtracks .track .inner .cued 
+{
+	margin: 0 0 10px 0;
+}
+
+.jamtracks .track .inner .cued a
+{
+	color: #ff0;
+	font-size: 130%;
+	font-weight: bold;
+	text-decoration: blink;
+}
+
+
+.jamtracks .track .inner .cue
+{
+	margin: 0 0 0 0;
+}
+
+.jamtracks .track .inner .cue select
+{
+	width: 100%;
+}
+
+.jamtracks .last
+{
+	clear: both;
+}
+
+
+
+
+.narrowbutton
+{
+	width: 20px;
+	background-color: #ccc;
+}
+
+.disablednarrowbutton
+{
+	width: 20px;
+	background-color: #888;
+}
+
+.selectednarrowbutton
+{
+	width: 20px;
+	background-color: #4f2;
+}
+
+.widebutton
+{
+	width: 40px;
+	background-color: #ccc;
+}
+
+.disabledwidebutton
+{
+	width: 40px;
+	background-color: #888;
+}
+
+.selectedwidebutton
+{
+	width: 40px;
+	background-color: #4f2;
+}
+
+.narrowbutton a,
+.widebutton a
+{
+	padding: 2px 4px;
+	color: #000;
+}
+
+.disablednarrowbutton a,
+.disabledwidebutton a
+{
+	padding: 2px 4px;
+	color: #666;
+}
+
+.selectednarrowbutton a,
+.selectedwidebutton a
+{
+	padding: 2px 4px;
+	color: #121;
+}
+
+.transposevalue
+{
+	font-size: 11pt;
+	font-weight: bold;
+}

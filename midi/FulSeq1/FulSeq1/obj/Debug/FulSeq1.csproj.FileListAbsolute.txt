@@ -1,0 +1,14 @@
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\ResolveAssemblyReference.cache
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\FulSeq1.Form1.resources
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\FulSeq1.Properties.Resources.resources
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\FulSeq1.csproj.GenerateResource.Cache
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\FulSeq1.exe
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\FulSeq1.pdb
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Collections.dll
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Multimedia.dll
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Multimedia.Midi.dll
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Multimedia.Timers.dll
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Threading.dll
+c:\work\midi\FulSeq1\FulSeq1\bin\Debug\Sanford.Multimedia.Midi.pdb
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\FulSeq1.exe
+c:\work\midi\FulSeq1\FulSeq1\obj\Debug\FulSeq1.pdb

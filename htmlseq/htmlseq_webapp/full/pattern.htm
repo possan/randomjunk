@@ -1,0 +1,150 @@
+<html>
+<head>
+	<title>WE!J</title>
+
+	<script type="text/javascript" src="js/prototype.js"></script>
+
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+
+	<link rel="Stylesheet" href="seq.css" />
+
+	<script type="text/javascript" src="common.js"></script>
+
+	<script type="text/javascript" src="pattern.js"></script>
+
+	<script type="text/javascript"> 
+	
+function initPatternView()
+{
+	g_Viewport = new Seq.Viewport();
+	
+	initPageHeader('PAT');
+
+	setStatus( 'Initializing view...' );
+	beginGetAutomationChannels();
+	beginGetInitialInstrumentList();
+	// beginLoadPatternList();
+	
+	{
+		var el = $('zoom');
+		var zooms = [ 10, 20, 50, 100, 200, 400 ];
+		el.options.length = 0;
+		for( var k=0; k<zooms.length; k++ )
+		{
+			var z = zooms[k];
+			el.options[ el.options.length ] = new Option( z.toString()+"%", z.toString() );
+		} 
+		el.selectedIndex = zooms.indexOf( 100 );
+	}
+
+	{
+		var el = $('duration');
+		el.value = '16';
+	}
+	
+	beginPolling();
+	
+	var el1 = $('notesplaceholder');
+	Event.observe( el1, 'mousemove', noteMouseMove.bindAsEventListener( this ), true );
+	Event.observe( el1, 'mousedown', noteMouseDown.bindAsEventListener( this ) );
+	Event.observe( el1, 'dblclick', noteDblClick.bindAsEventListener( this ) );
+	Event.observe( el1, 'mouseup', noteMouseUp.bindAsEventListener( this ) );
+}
+
+
+
+	</script>
+
+</head>
+<body class="seq" onload="initPatternView();">
+	<div class="headerblock" id="headerblock">
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="patterneditor-content">
+				<div class="halfheight">
+					<div class="grouptop">
+						<ul class="toolbar">
+							<li><big>Pattern editor</big></li>
+							<li></li>
+							<li><span>Name:</span> </li>
+							<li>
+								<input type="text" id="patternname" style="width: 100px;" value="Min Pattern!" onchange="renamePattern(event);" />
+							</li>
+							<li></li>
+							<li><span>Instrument:</span> </li>
+							<li>
+								<select id="instrumentdropdown" style="width: 100px;" onchange="changeInstrument(event);">
+									<option>00 - Bass</option>
+									<option>01 - Synth</option>
+									<option>02 - Drums 1</option>
+								</select>
+							</li>
+							<li></li>
+							<li><span>Pattern:</span> </li>
+							<li>
+								<select id="patterndropdown" style="width: 100px;" onchange="changePattern(event);">
+									<option>00 - Bass</option>
+									<option>01 - Bass 2</option>
+									<option>02 - Bass 3</option>
+								</select>
+							</li>
+							<li><span><a href="javascript:cloneThisPattern();">Clone this pattern</a> | <a href="javascript:createNewPattern();">
+								New a pattern</a> </span></li>
+							<li></li>
+							<li><span>Duration (beats):</span> </li>
+							<li>
+								<input type="text" id="duration" style="width: 50px;" onchange="changeDuration(event);"></input>
+							</li>
+							<li class="spacer"></li>
+							<li><span>Zoom:</span> </li>
+							<li>
+								<select id="zoom" onchange="changeZoom(event);">
+									<option>X</option>
+								</select>
+							</li>
+							<li class="last"></li>
+						</ul>
+					</div>
+					<div class="groupbody">
+						<div class="patterneditor-notes">
+							<div id="notesplaceholder">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="halfheight">
+					<div class="grouptop">
+						<ul class="toolbar">
+							<li><big>Automation</big></li>
+							<li></li>
+							<li><span>Channel:</span> </li>
+							<li>
+								<select id="Select1" onchange="changeInstrument(event);">
+									<option>00 - Bass</option>
+									<option>01 - Synth</option>
+									<option>02 - Drums 1</option>
+								</select>
+							</li>
+							<li><span><a href="javascript:cloneThisPattern();">Copy automation</a> | <a href="javascript:createNewPattern();">
+								Paste automation</a> | <a href="javascript:removeThisPattern();">Remove automation</a>
+								| </span></li>
+							<li></li>
+							<li class="last"></li>
+						</ul>
+					</div>
+					<div class="groupbody">
+						<div class="patterneditor-automation">
+							<div id="automationplaceholder">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+		<span id="statustext"></span>
+	</div>
+</body>
+</html>

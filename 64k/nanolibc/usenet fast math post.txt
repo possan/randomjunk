@@ -1,0 +1,105 @@
+const
+  ln2=0.693147181;
+  dexpA:double=$100000/ln2;  // 2^20 / ln2
+  dlnA:double=ln2/$100000;
+  fexpA:double=$800000/ln2;  // 2^23 / ln2
+  flnA:double=ln2/$800000;
+  fexpC=545947;
+  flnC=545947;
+  dexpC=68243;
+  fnexpA:double=-$800000/ln2;  // 2^23 / ln2
+  fone:single=1;
+  fdivA:single=-1;
+ 
+function dexp(x:single):double;
+var y:double;
+asm
+  fld x
+  fmul dexpA
+  fistp dword ptr y[4]
+  mov dword ptr y[0],0
+  add dword ptr y[4],($3FF00000-dExpC)
+  fld y
+end;
+ 
+function dln(x:double):double;
+asm
+  sub dword ptr x[4],($3FF00000-dExpC);
+  fild dword ptr x[4]
+  fmul dlnA
+end;
+ 
+function fexp(x:single):double;
+// ~ 10x faster
+asm
+  fld x
+  fmul fexpA
+  fistp dword ptr x
+  add dword ptr x,($3F800000-fExpC)
+  fld x
+end;
+ 
+function fexp1(var x:single):double;
+// special case when x can be prevented from being pushed on the stack // ~14.5x faster
+asm
+  fld dword ptr [eax]
+  fmul fexpA
+  fistp dword ptr [esp-4]
+  add dword ptr [esp-4],($3F800000-fExpC)
+  fld dword ptr [esp-4]
+end;
+ 
+ 
+function fln(x:single):double;
+// ~ 7x faster
+// very poor accuracy as x -> 1.0
+asm
+  sub dword ptr x, ($3F800000-flnC)
+  fild dword ptr x
+  fmul flnA
+end;
+ 
+function fdiv(x:single):single;
+// ~20 faster in some circumstances
+var y:single;
+asm
+  sub dword ptr x, ($3F800000-flnC)
+  fild dword ptr x
+  fmul fdivA
+  fistp dword ptr y
+  add dword ptr y,($3F800000-fExpC)
+  fld y  // 1/x
+end;
+ 
+function sigmoid(x:single):single;
+// ~1.6x faster than 1/(1+fexp)
+asm
+  fld x
+  fmul fnexpA
+  fistp dword ptr x
+  add dword ptr x,($3F800000-fExpC)
+  fld x
+  fld dword ptr fone
+  fadd st(1),st(0);
+  fdivr
+end;
+ 
+function sigmoid1(var x:single):single;
+// ~2.3x faster than 1/(1+fexp)
+asm
+  fld dword ptr [esp-4]
+  fmul fnexpA
+  fistp dword ptr [esp-4]
+  add dword ptr [esp-4],($3F800000-fExpC)
+  fld dword ptr [esp-4]
+  fld dword ptr fone
+  fadd st(1),st(0);
+  fdivr
+end;
+ 
+function sigmoid0(x:single):single;
+begin
+  result:=1/(1+fexp(-x));
+end;
+ 
+ 

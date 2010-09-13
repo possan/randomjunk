@@ -1,0 +1,9 @@
+﻿
+
+function initSongView()
+{
+	initPageHeader('SNG');
+
+}
+
+	

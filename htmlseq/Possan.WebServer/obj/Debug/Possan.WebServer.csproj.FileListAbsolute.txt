@@ -1,0 +1,10 @@
+c:\work\midi\htmlseq_webapp\Possan.WebServer\obj\Debug\ResolveAssemblyReference.cache
+c:\work\midi\htmlseq_webapp\Possan.WebServer\bin\Debug\Possan.WebServer.dll
+c:\work\midi\htmlseq_webapp\Possan.WebServer\bin\Debug\Possan.WebServer.pdb
+c:\work\midi\htmlseq_webapp\Possan.WebServer\obj\Debug\Possan.WebServer.dll
+c:\work\midi\htmlseq_webapp\Possan.WebServer\obj\Debug\Possan.WebServer.pdb
+C:\work\htmlseq\Possan.WebServer\bin\Debug\Possan.WebServer.dll
+C:\work\htmlseq\Possan.WebServer\bin\Debug\Possan.WebServer.pdb
+C:\work\htmlseq\Possan.WebServer\obj\Debug\ResolveAssemblyReference.cache
+C:\work\htmlseq\Possan.WebServer\obj\Debug\Possan.WebServer.dll
+C:\work\htmlseq\Possan.WebServer\obj\Debug\Possan.WebServer.pdb

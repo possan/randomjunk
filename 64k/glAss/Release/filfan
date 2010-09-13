@@ -1,0 +1,288 @@
+Microsoft (R) COFF Binary File Dumper Version 5.12.8078
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+
+Dump of file p_silu.obj
+
+File Type: COFF OBJECT
+
+COFF SYMBOL TABLE
+000 00000000 DEBUG  notype       Filename     | .file
+    E:\prj64k\glAss (eventad)\parts\p_silu.cpp
+004 000B1FCD ABS    notype       Static       | @comp.id
+005 00000000 SECT1  notype       Static       | .drectve
+    Section length   28, #relocs    0, #linenums    0, checksum        0
+007 00000000 SECT2  notype       Static       | .text
+    Section length    1, #relocs    0, #linenums    0, checksum  26D930A, selection    1 (pick no duplicates)
+009 00000000 SECT2  notype ()    External     | ?p_silu_init@@YAXXZ (void __cdecl p_silu_init(void))
+00A 00000000 SECT3  notype       Static       | .debug$F
+    Section length   10, #relocs    1, #linenums    0, checksum        0, selection    5 (pick associative Section 2)
+00C 00000000 SECT4  notype       Static       | .text
+    Section length    1, #relocs    0, #linenums    0, checksum  26D930A, selection    1 (pick no duplicates)
+00E 00000000 SECT4  notype ()    External     | ?p_silu_kill@@YAXXZ (void __cdecl p_silu_kill(void))
+00F 00000000 SECT5  notype       Static       | .debug$F
+    Section length   10, #relocs    1, #linenums    0, checksum 98EBC61A, selection    5 (pick associative Section 4)
+011 00000000 SECT6  notype       Static       | .text
+    Section length  53E, #relocs   48, #linenums    0, checksum 9087CB3E, selection    1 (pick no duplicates)
+013 00000000 SECT6  notype ()    External     | ?p_silu_rit@@YAXM@Z (void __cdecl p_silu_rit(float))
+014 00000000 UNDEF  notype ()    External     | __imp__glPopMatrix@0
+015 00000000 UNDEF  notype ()    External     | __imp__glEnd@0
+016 00000000 SECT7  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum D3800C84, selection    2 (pick any)
+018 00000000 SECT7  notype       External     | __real@4@40009333330000000000
+019 00000000 SECT8  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C6FB5763, selection    2 (pick any)
+01B 00000000 SECT8  notype       External     | __real@4@40008ccccd0000000000
+01C 00000000 SECT9  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 76BDC837, selection    2 (pick any)
+01E 00000000 SECT9  notype       External     | __real@4@3ff8a3d70a0000000000
+01F 00000000 SECTA  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 54B2BD3A, selection    2 (pick any)
+021 00000000 SECTA  notype       External     | __real@4@3ff9cccccd0000000000
+022 00000000 SECTB  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum D04B2D50, selection    2 (pick any)
+024 00000000 SECTB  notype       External     | __real@4@3ff6e560420000000000
+025 00000000 SECTC  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 7291F95B, selection    2 (pick any)
+027 00000000 SECTC  notype       External     | __real@4@40008666660000000000
+028 00000000 SECTD  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 4D3E507C, selection    2 (pick any)
+02A 00000000 SECTD  notype       External     | __real@4@3ff9a3d70a0000000000
+02B 00000000 SECTE  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 183615E7, selection    2 (pick any)
+02D 00000000 SECTE  notype       External     | __real@4@3ffacccccd0000000000
+02E 00000000 SECTF  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum EBC8B51B, selection    2 (pick any)
+030 00000000 SECTF  notype       External     | __real@4@3ff7e560420000000000
+031 00000000 SECT10 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 4D4493C5, selection    2 (pick any)
+033 00000000 SECT10 notype       External     | __real@4@3ffff333330000000000
+034 00000000 SECT11 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum EC55661A, selection    2 (pick any)
+036 00000000 SECT11 notype       External     | __real@4@3fffe666660000000000
+037 00000000 SECT12 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  1BAF8A1, selection    2 (pick any)
+039 00000000 SECT12 notype       External     | __real@4@3ffaa3d70a0000000000
+03A 00000000 SECT13 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 5CEFFFF5, selection    2 (pick any)
+03C 00000000 SECT13 notype       External     | __real@4@3ffb8f5c290000000000
+03D 00000000 SECT14 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 1DEFB0E6, selection    2 (pick any)
+03F 00000000 SECT14 notype       External     | __real@4@3ff98b43960000000000
+040 00000000 SECT15 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C6A3D1D4, selection    2 (pick any)
+042 00000000 SECT15 notype       External     | __real@4@3fffd9999a0000000000
+043 00000000 SECT16 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum CDBBEC80, selection    2 (pick any)
+045 00000000 SECT16 notype       External     | __real@4@3fffcccccd0000000000
+046 00000000 SECT17 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 2D3125E1, selection    2 (pick any)
+048 00000000 SECT17 notype       External     | __real@4@3ffaf5c28f0000000000
+049 00000000 SECT18 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 85A3D2A6, selection    2 (pick any)
+04B 00000000 SECT18 notype       External     | __real@4@3ffbb851ec0000000000
+04C 00000000 SECT19 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A73FECBC, selection    2 (pick any)
+04E 00000000 SECT19 notype       External     | __real@4@3ffae978d50000000000
+04F 00000000 SECT1A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 7D9CFA73, selection    2 (pick any)
+051 00000000 SECT1A notype       External     | __real@4@3fffc000000000000000
+052 00000000 SECT1B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum BD3DDCC0, selection    2 (pick any)
+054 00000000 SECT1B notype       External     | __real@4@3fffb333330000000000
+055 00000000 SECT1C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 3A3960EA, selection    2 (pick any)
+057 00000000 SECT1C notype       External     | __real@4@3ffba3d70a0000000000
+058 00000000 SECT1D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C76C7BCF, selection    2 (pick any)
+05A 00000000 SECT1D notype       External     | __real@4@3ffbe147ae0000000000
+05B 00000000 SECT1E notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 9F851CB7, selection    2 (pick any)
+05D 00000000 SECT1E notype       External     | __real@4@3ffbdb22d10000000000
+05E 00000000 SECT1F notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 1C2C291F, selection    2 (pick any)
+060 00000000 SECT1F notype       External     | __real@4@3fffa666660000000000
+061 00000000 SECT20 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 36DA9ED1, selection    2 (pick any)
+063 00000000 SECT20 notype       External     | __real@4@3fff99999a0000000000
+064 00000000 SECT21 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 3DC2A385, selection    2 (pick any)
+066 00000000 SECT21 notype       External     | __real@4@3fff8ccccd0000000000
+067 00000000 SECT22 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 7A5E360C, selection    2 (pick any)
+069 00000000 SECT22 notype       External     | __real@4@3ffc99999a0000000000
+06A 00000000 SECT23 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum CE528839, selection    2 (pick any)
+06C 00000000 SECT23 notype       External     | __real@4@3ffcd3f7cf0000000000
+06D 00000000 SECT24 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B6662D3D, selection    2 (pick any)
+06F 00000000 SECT24 notype       External     | __real@4@3ffe8000000000000000
+070 00000000 SECT25 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 23B58DAC, selection    2 (pick any)
+072 00000000 SECT25 notype       External     | __real@4@3ffbcccccd0000000000
+073 00000000 SECT26 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 76BDC837, selection    2 (pick any)
+075 00000000 SECT26 notype       External     | __real@4@3ff8a3d70a3d70a3d800
+076 00000000 UNDEF  notype ()    External     | __imp__glVertex3f@12
+077 00000000 UNDEF  notype ()    External     | __imp__glColor3f@12
+078 00000000 UNDEF  notype ()    External     | __imp__glBegin@4
+079 00000000 UNDEF  notype ()    External     | __imp__glPointSize@4
+07A 00000000 SECT27 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 28A2B27C, selection    2 (pick any)
+07C 00000000 SECT27 notype       External     | __real@4@4001e000000000000000
+07D 00000000 SECT28 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 34676FB0, selection    2 (pick any)
+07F 00000000 SECT28 notype       External     | __real@4@40048c00000000000000
+080 00000000 SECT29 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  1DB7106, selection    2 (pick any)
+082 00000000 SECT29 notype       External     | __real@4@40028000000000000000
+083 00000000 SECT2A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum BD2696DE, selection    2 (pick any)
+085 00000000 SECT2A notype       External     | __real@4@4001c000000000000000
+086 00000000 SECT2B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 945F55A4, selection    2 (pick any)
+088 00000000 SECT2B notype       External     | __real@4@4002a000000000000000
+089 00000000 SECT2C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 156790BB, selection    2 (pick any)
+08B 00000000 SECT2C notype       External     | __real@4@4003f000000000000000
+08C 00000000 SECT2D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 2EE408F0, selection    2 (pick any)
+08E 00000000 SECT2D notype       External     | __real@4@4002f000000000000000
+08F 00000000 SECT2E notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 4D5FD9DB, selection    2 (pick any)
+091 00000000 SECT2E notype       External     | __real@4@40018000000000000000
+092 00000000 SECT2F notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 76DC4190, selection    2 (pick any)
+094 00000000 SECT2F notype       External     | __real@4@40008000000000000000
+095 00000000 SECT30 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 86A50E95, selection    2 (pick any)
+097 00000000 SECT30 notype       External     | __real@4@4000c000000000000000
+098 00000000 SECT31 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  D56041E, selection    2 (pick any)
+09A 00000000 SECT31 notype       External     | __real@4@4004a000000000000000
+09B 00000000 SECT32 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum D8DBFD79, selection    2 (pick any)
+09D 00000000 SECT32 notype       External     | __real@4@4001a000000000000000
+09E 00000000 UNDEF  notype ()    External     | __imp__glRotatef@16
+09F 00000000 UNDEF  notype ()    External     | __imp__glPushMatrix@0
+0A0 00000000 UNDEF  notype ()    External     | __fltused
+0A1 00000000 SECT33 notype       Static       | .text
+    Section length  209, #relocs   1A, #linenums    0, checksum 96A93670, selection    1 (pick no duplicates)
+0A3 00000000 SECT33 notype ()    External     | ?p_silu_klutt@@YAXMMM@Z (void __cdecl p_silu_klutt(float,float,float))
+0A4 00000000 SECT34 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 2DFCC139, selection    2 (pick any)
+0A6 00000000 SECT34 notype       External     | __real@8@3ffb80b242070b8cf800
+0A7 00000000 UNDEF  notype ()    External     | __imp__glTexCoord2f@8
+0A8 00000000 SECT35 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 8033EF2E, selection    2 (pick any)
+0AA 00000000 SECT35 notype       External     | __real@8@3ffd99999a0000000000
+0AB 00000000 SECT36 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum A2DACC80, selection    2 (pick any)
+0AD 00000000 SECT36 notype       External     | __real@8@3fff8000000000000000
+0AE 00000000 SECT37 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 813F445D, selection    2 (pick any)
+0B0 00000000 SECT37 notype       External     | __real@4@3ffcccccccccccccd000
+0B1 00000000 UNDEF  notype ()    External     | _sin
+0B2 00000000 SECT38 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum DB0C0F7A, selection    2 (pick any)
+0B4 00000000 SECT38 notype       External     | __real@4@3ffdaaaaaaaaaaaaa800
+0B5 00000000 SECT39 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 23B58DAC, selection    2 (pick any)
+0B7 00000000 SECT39 notype       External     | __real@4@3ffbccccccccccccd000
+0B8 00000000 UNDEF  notype ()    External     | _cos
+0B9 00000000 UNDEF  notype ()    External     | ?glaSetTexture@@YAXH@Z (void __cdecl glaSetTexture(int))
+0BA 00000000 SECT3A notype       Static       | .text
+    Section length  2BB, #relocs   38, #linenums    0, checksum 29F1E9FF, selection    1 (pick no duplicates)
+0BC 00000000 SECT3A notype ()    External     | ?p_silu_run@@YAXPAUEVENT@@@Z (void __cdecl p_silu_run(struct EVENT *))
+0BD 00000000 UNDEF  notype ()    External     | __imp__glTranslatef@12
+0BE 00000000 SECT3B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 79E7D684, selection    2 (pick any)
+0C0 00000000 SECT3B notype       External     | __real@4@c002a000000000000000
+0C1 00000000 SECT3C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum BB602C52, selection    2 (pick any)
+0C3 00000000 SECT3C notype       External     | __real@4@4002d000000000000000
+0C4 00000000 SECT3D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A0E75AFB, selection    2 (pick any)
+0C6 00000000 SECT3D notype       External     | __real@4@c0018000000000000000
+0C7 00000000 UNDEF  notype ()    External     | __imp__glFrustum@48
+0C8 00000000 SECT3E notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum CD79D7F9, selection    2 (pick any)
+0CA 00000000 SECT3E notype       External     | __real@8@bffec000000000000000
+0CB 00000000 SECT3F notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 20C154D9, selection    2 (pick any)
+0CD 00000000 SECT3F notype       External     | __real@8@3ffec000000000000000
+0CE 00000000 SECT40 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 7DDB48BC, selection    2 (pick any)
+0D0 00000000 SECT40 notype       External     | __real@8@4002f000000000000000
+0D1 00000000 SECT41 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 76C70B8E, selection    2 (pick any)
+0D3 00000000 SECT41 notype       External     | __real@4@3ffef333330000000000
+0D4 00000000 SECT42 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum D7D6FE51, selection    2 (pick any)
+0D6 00000000 SECT42 notype       External     | __real@4@3ffee666660000000000
+0D7 00000000 SECT43 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  D59069A, selection    2 (pick any)
+0D9 00000000 SECT43 notype       External     | __real@4@3ffe99999a0000000000
+0DA 00000000 SECT44 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum FD20499F, selection    2 (pick any)
+0DC 00000000 SECT44 notype       External     | __real@4@3ffed9999a0000000000
+0DD 00000000 SECT45 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum BABCDC16, selection    2 (pick any)
+0DF 00000000 SECT45 notype       External     | __real@4@3ffdcccccd0000000000
+0E0 00000000 SECT46 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum F63874CB, selection    2 (pick any)
+0E2 00000000 SECT46 notype       External     | __real@4@3ffecccccd0000000000
+0E3 00000000 SECT47 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 813F445D, selection    2 (pick any)
+0E5 00000000 SECT47 notype       External     | __real@4@3ffccccccd0000000000
+0E6 00000000 SECT48 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum FAE285E0, selection    2 (pick any)
+0E8 00000000 SECT48 notype       External     | __real@4@3ffd8000000000000000
+0E9 00000000 SECT49 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 461F6238, selection    2 (pick any)
+0EB 00000000 SECT49 notype       External     | __real@4@3ffec000000000000000
+0EC 00000000 SECT4A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 41DDAE47, selection    2 (pick any)
+0EE 00000000 SECT4A notype       External     | __real@4@3ffd99999a0000000000
+0EF 00000000 SECT4B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 86BE448B, selection    2 (pick any)
+0F1 00000000 SECT4B notype       External     | __real@4@3ffeb333330000000000
+0F2 00000000 SECT4C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8DE5B576, selection    2 (pick any)
+0F4 00000000 SECT4C notype       External     | __real@4@3fff8000000000000000
+0F5 00000000 SECT4D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum F1A23E03, selection    2 (pick any)
+0F7 00000000 SECT4D notype       External     | __real@4@4002c000000000000000
+0F8 00000000 UNDEF  notype ()    External     | __imp__glOrtho@48
+0F9 00000000 SECT4E notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 4F624FA0, selection    2 (pick any)
+0FB 00000000 SECT4E notype       External     | __real@8@bfff8000000000000000
+0FC 00000000 SECT4F notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum F01D24AD, selection    2 (pick any)
+0FE 00000000 SECT4F notype       External     | __real@8@c005c800000000000000
+0FF 00000000 SECT50 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 1DA5A78D, selection    2 (pick any)
+101 00000000 SECT50 notype       External     | __real@8@4005c800000000000000
+102 00000000 UNDEF  notype ()    External     | __imp__glLoadIdentity@0
+103 00000000 UNDEF  notype ()    External     | __imp__glMatrixMode@4
+104 00000000 UNDEF  notype ()    External     | __imp__glBlendFunc@8
+105 00000000 UNDEF  notype ()    External     | __imp__glEnable@4
+106 00000000 UNDEF  notype ()    External     | __imp__glDisable@4
+107 00000000 SECT51 notype       Static       | .text
+    Section length   D0, #relocs    E, #linenums    0, checksum 2D454021, selection    1 (pick no duplicates)
+109 00000000 SECT51 notype ()    External     | ?psilufunc@@YAXMMPAM00MM@Z (void __cdecl psilufunc(float,float,float *,float *,float *,float,float))
+10A 00000000 SECT52 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 96ED5432, selection    2 (pick any)
+10C 00000000 SECT52 notype       External     | __real@4@4001c90fdb0000000000
+10D 00000000 SECT53 notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum  A90C11A, selection    2 (pick any)
+10F 00000000 SECT53 notype       External     | __real@8@3fffe666666666666800
+
+String Table Size = 0xAB5 bytes
+
+  Summary
+
+          20 .debug$F
+          28 .drectve
+         150 .rdata
+         AD4 .text

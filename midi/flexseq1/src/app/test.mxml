@@ -1,0 +1,543 @@
+<?xml version="1.0" ?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:sequencer="sequencer.*"
+    xmlns:flexlib="http://code.google.com/p/flexlib/" 
+	initialize="myInit()"    creationComplete="onCreationComplete();">
+
+	<mx:Style>
+		<![CDATA[
+
+		Application {
+			backgroundColor: #333333;
+			backgroundGradientColors: #111111, #222222;
+			themeColor: #ff8800;
+			color: #000000;
+		}
+	
+	]]>
+	</mx:Style>
+	<mx:Script>
+		<![CDATA[
+  /*
+		
+		import flexlib.scheduling.samples.ScheduleData;
+         import flexlib.scheduling.scheduleClasses.SimpleScheduleEntry;
+         import flexlib.scheduling.scheduleClasses.BackgroundItem;
+         import flexlib.scheduling.scheduleClasses.LayoutScrollEvent;
+         import flexlib.scheduling.util.DateUtil;
+         import mx.collections.IList;
+         import mx.collections.ArrayCollection;
+         import mx.controls.Alert;
+         import mx.events.ScrollEvent;
+         import mx.events.ScrollEventDirection;
+         
+         [Bindable]
+         private var dataProvider : IList;
+         [Bindable]
+         private var rowDataProvider : IList;
+         [Bindable]
+         private var startDate : Date;
+         [Bindable]
+         private var endDate : Date;
+         [Bindable]
+         private var zoom : Number;
+         [Bindable]
+         private var scheduleViewerWidth : Number = 600;
+         [Bindable]
+         private var scheduleViewerHeight : Number = 400;
+        */             
+		
+         private function onCreationComplete() : void
+         {
+          /*  setTimeframe();
+            initDataProvider();
+            initBackgroundColors();
+            zoom = 250;*/
+         }
+         /*
+         private function setTimeframe() : void
+         {
+            startDate = DateUtil.clearTime( new Date() );
+            endDate = getEndDate( startDate );
+         }
+         
+         private function getEndDate( startDate : Date ) : Date
+         {
+            var duration : Number = DateUtil.DAY_IN_MILLISECONDS * 1;
+            var endDate : Date = new Date( startDate.getTime() + duration );
+            return endDate;
+         }
+         
+         private function initDataProvider() : void
+         {
+            dataProvider = new ScheduleData().createRowsOfSequentialColoredEntries( 150, 15 );            
+            rowDataProvider = new ArrayCollection();
+            for( var i : int = 0; i < dataProvider.length; i++ )
+            {
+               rowDataProvider.addItem( { label: "Row " + ( i + 1 ) } );         
+            }
+         }
+         
+         private function onZoom( value : Number ) : void
+         {
+            zoom = value;
+         }
+         
+         private function onScrollTimeline( position : Number ) : void
+         {
+            scheduleViewer.xPosition = position;
+         }
+         
+         private function onScrollScheduleViewer( event : ScrollEvent ) : void
+         {
+            if( event.direction == ScrollEventDirection.HORIZONTAL )
+            {
+               timeline.xPosition = event.position;
+            }
+         }
+         
+         private function scrollList( event : LayoutScrollEvent ) : void
+         {
+            if( event.direction == ScrollEventDirection.VERTICAL )
+            {
+               rowsList.verticalScrollPosition = event.position;      
+            }
+         }         
+         
+         private function gotoNow() : void
+         {
+            var time : Date = new Date();
+            scheduleViewer.moveToTime( time.getTime() - startDate.getTime() );
+         }
+         
+         private function gotoSelectedEntry() : void
+         {
+            if( scheduleViewer.selectedItem != null )
+            {
+               scheduleViewer.moveToEntry( scheduleViewer.selectedItem );
+            }
+            else
+            {
+               warnAboutNoSelection();
+            }
+         }
+         
+         private function warnAboutNoSelection() : void
+         {
+            Alert.show( "Please select an entry." );
+         }
+         
+         private function initBackgroundColors() : void
+         {
+            var result : ArrayCollection = new ArrayCollection();
+            
+            var duration : Number = endDate.getTime() - startDate.getTime();
+            var days : Number = duration / DateUtil.DAY_IN_MILLISECONDS;
+            
+            for( var i : int; i < days; i++ )
+            {
+               var currentDate : Number = DateUtil.DAY_IN_MILLISECONDS * i;
+               var backgroundItem : BackgroundItem;
+               backgroundItem = createBackgroundItem( "office closed", 0xD5D4D0, 
+                                                   currentDate, 0, 0, 24, 0 );         
+               result.addItem( backgroundItem );
+               
+               backgroundItem = createBackgroundItem( "generell office hours", 0xFFFFFF, 
+                                                      currentDate, 9, 0, 17, 0 );
+               result.addItem( backgroundItem );
+               
+               backgroundItem = createBackgroundItem( "lunchtime", 0xEEEDE9, 
+                                                      currentDate, 12, 0, 13, 0 );
+               result.addItem( backgroundItem );         
+            }            
+            scheduleViewer.backgroundItems = result;
+         }
+         
+         private function createBackgroundItem( description : String, 
+                                                color : Number, currentDate : Number,  
+                                                startHours : Number, startMinutes : Number, 
+                                                endHours : Number, endMinutes : Number ) : BackgroundItem
+         {
+            var backgroundItem : BackgroundItem = new BackgroundItem();
+            backgroundItem.description = description;
+            backgroundItem.color = color;
+            backgroundItem.startDate = new Date( currentDate + createTime( startHours, startMinutes ) );
+            backgroundItem.endDate = new Date( currentDate + createTime( endHours, endMinutes ) );
+            return backgroundItem;   
+         }
+         
+         private function createTime( hours : Number, minutes : Number ) : Number
+         {
+            var result : Number = (( hours * 60 ) + minutes ) * 60 * 1000;
+            return result;
+         }
+
+
+
+
+
+*/
+
+		import sequencer.*;
+        import mx.events.*;
+        import mx.controls.*;
+        import mx.events.ItemClickEvent;
+		import mx.collections.ArrayCollection;
+
+        [Bindable]
+        public var currentinstruments:ArrayCollection = new ArrayCollection(
+            [ {label:"01", data:1}, 
+              {label:"02 Reeze bass", data:2}, 
+              {label:"03", data:3}, 
+              {label:"04", data:4}, 
+              {label:"05", data:5}, 
+              {label:"06", data:6}, 
+              {label:"07", data:7}, 
+              {label:"08", data:8}, 
+              {label:"09", data:9}, 
+              {label:"10 Clicks 1", data:10}, 
+              {label:"11 Clicks 2", data:11}, 
+              {label:"12 Clicks 3", data:12}, 
+              {label:"13 Deep kick", data:13}, 
+              {label:"14", data:14}, 
+              {label:"15", data:15}, 
+              {label:"16", data:16} ]);
+        
+        [Bindable]
+        public var currentpatterns:ArrayCollection = new ArrayCollection(
+            [ 
+			  {label:"01:01 Bass 1", data:1}, 
+              {label:"01:02 Bass 2", data:2}
+			  
+			] );
+        
+        private function closeHandler(event:Event):void {
+            myLabel.text = "You selected: " +  ComboBox(event.target).selectedItem.label;
+            myData.text = "Data: " +  ComboBox(event.target).selectedItem.data;
+        }    
+
+        [Bindable]
+        public var selectedItem:Object;
+
+        //Event handler, invoked when you select from the menu.
+        public function itemClickHandler(event:MenuEvent):void 
+		{
+			Alert.show("Menu label: " + event.label+ "  \n menu item index within parent menu: " + event.index);
+        }
+
+        // Event handler function to print a message
+        // describing the selected Button control.
+        private function clickHandler(event:ItemClickEvent):void 
+		{
+		//	myTA.text="Selected button index: " + String(event.index) +
+		//		"\n" + "Selected button label: " + event.label;
+        }
+		
+		private function changeMainView(event:ItemClickEvent):void 
+		{
+			setView( event.index+1 );
+		}
+		
+		private function setView(i:Number):void
+		{
+			myViewStack.selectedIndex = i-1;
+		}
+		
+		private function myInit():void
+		{
+			setView(2);
+		}
+    ]]>
+	</mx:Script>
+
+	<mx:ApplicationControlBar dock="true">
+		<mx:HBox width="100%">
+			<mx:Label text="Connected:" />
+			<mx:Label text="POSSAN-PC:0001" fontStyle="bold" />
+			<mx:LinkButton label="Disconnect" />
+			<mx:Spacer width="100%"/>
+			<mx:ToggleButtonBar itemClick="changeMainView(event);">
+				<mx:dataProvider>
+					<mx:Array>
+						<mx:String>Jam</mx:String>
+						<mx:String>Song</mx:String>
+						<mx:String>Pattern</mx:String>
+						<mx:String>Instrument</mx:String>
+						<mx:String>Global</mx:String>
+					</mx:Array>
+				</mx:dataProvider>
+			</mx:ToggleButtonBar>
+		</mx:HBox>
+	</mx:ApplicationControlBar>
+
+	<mx:ViewStack id="myViewStack" width="100%" height="100%">
+
+		<mx:Panel id="jampanel" title="Jammin'" height="80%" width="100%">
+			<mx:HBox height="100%" width="100%">
+				<mx:VBox>
+					<mx:Label text="01: Bass" />
+					<mx:VSlider
+						width="100" height="200"
+					   dataTipPlacement="top"
+					   minimum="0" maximum="100" value="100"
+					   snapInterval="1" tickInterval="10"
+					   labels="['0%','100%']"
+					   allowTrackClick="true"
+					   liveDragging="true" />
+					<mx:CheckBox label="Mute" />
+					<mx:CheckBox label="Solo" />
+					<mx:Label text="cue pat.:" />
+					<mx:ComboBox dataProvider="{currentpatterns}" width="100"
+					close="closeHandler(event);"/>
+				</mx:VBox>
+
+				<mx:VBox>
+					<mx:Label text="02: Reeze" />
+					<mx:VSlider
+						width="100" height="200"
+					   dataTipPlacement="top"
+					   minimum="0" maximum="100" value="100"
+					   snapInterval="1" tickInterval="10"
+					   labels="['0%','100%']"
+					   allowTrackClick="true"
+					   liveDragging="true" />
+					<mx:CheckBox label="Mute" />
+					<mx:CheckBox label="Solo" />
+
+					<mx:Label text="cue pat.:" />
+					<mx:ComboBox dataProvider="{currentpatterns}" width="100"
+					close="closeHandler(event);"/>
+
+				</mx:VBox>
+
+				<mx:VBox>
+					<mx:Label text="03:" />
+					<mx:VSlider
+						width="100" height="200"
+					   dataTipPlacement="top"
+					   minimum="0" maximum="100" value="100"
+					   snapInterval="1" tickInterval="10"
+					   labels="['0%','100%']"
+					   allowTrackClick="true"
+					   liveDragging="true" />
+					<mx:CheckBox label="Mute" />
+					<mx:CheckBox label="Solo" />
+
+					<mx:Label text="cue pat.:" />
+					<mx:ComboBox dataProvider="{currentpatterns}" width="100"
+					close="closeHandler(event);"/>
+
+				</mx:VBox>
+
+				<mx:VBox>
+					<mx:Label text="04:" />
+					<mx:VSlider
+						width="100" height="200"
+					   dataTipPlacement="top"
+					   minimum="0" maximum="100" value="100"
+					   snapInterval="1" tickInterval="10"
+					   labels="['0%','100%']"
+					   allowTrackClick="true"
+					   liveDragging="true" />
+
+					<mx:Label text="cue pat.:" />
+					<mx:ComboBox dataProvider="{currentpatterns}" width="100"
+					close="closeHandler(event);"/>
+
+				</mx:VBox>
+
+				<mx:VBox>
+
+					<mx:Label text="Instrument mixer" />
+					<mx:Label text="Pattern-pads (som live)" />
+					
+					<sequencer:AnalogClock id="clock1" width="150" height="150" />
+
+					<mx:Label text="Pattern-meta, transpose etc, timescale, retrig, skip etc." />
+
+				</mx:VBox>
+
+				<mx:VBox>
+
+					<mx:Label text="Knobs" />
+
+					<mx:Label text="X" id="myLabel"/>
+					<mx:Label text="X" id="myData"/>
+				</mx:VBox>
+			</mx:HBox>
+
+		</mx:Panel>
+
+
+		<mx:Panel id="songpanel" title="Song sequencer" height="100%" width="100%">
+
+
+			<mx:HBox height="100%" width="100%">
+
+				<mx:VBox verticalGap="0">
+
+					<mx:Label text="Timeline:" />
+					<flexlib:HSlider
+						trackHighlightSkin="flexlib.skins.SliderHighlightSkin"
+						allowTrackClick="true" allowThumbOverlap="true"
+						liveDragging="true"
+						showDataTip="true"  dataTipPlacement="top"  dataTipOffset="3"
+						showTrackHighlight="true"
+						thumbCount="2"  width="200"
+						values="[-2000, 4000]"
+						minimum="-9000" maximum="9000" snapInterval="1"
+						/>
+					
+				</mx:VBox>
+			</mx:HBox>
+
+
+		</mx:Panel>
+
+
+		<mx:VBox id="patternpanel">
+
+			<mx:HBox>
+				<mx:Label text="Instrument:"/>
+				<mx:ComboBox dataProvider="{currentinstruments}" width="150"
+					close="closeHandler(event);"/>
+				<mx:Spacer />
+
+				<mx:Label text="Pattern:"/>
+				<mx:ComboBox dataProvider="{currentpatterns}" width="150"
+					close="closeHandler(event);"/>
+				<mx:Spacer />
+
+				<mx:Button label="Clone pattern"/>
+				<mx:Button label="New pattern"/>
+
+			</mx:HBox>
+
+			<mx:Panel title="Pattern" height="100%" width="100%">
+				<mx:VBox height="100%" width="100%">
+					<mx:HBox width="100%" paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">
+
+						<mx:Label text="Ins:"/>
+						<mx:ComboBox dataProvider="{currentinstruments}" width="100"
+							close="closeHandler(event);"/>
+						<mx:Spacer />
+
+						<mx:Label text="Pat:"/>
+						<mx:ComboBox dataProvider="{currentpatterns}" width="100"
+							close="closeHandler(event);"/>
+						<mx:Spacer />
+
+						<mx:Button label="Clone"/>
+						<mx:Button label="New"/>
+						<mx:Spacer />
+
+						<mx:Label text="Pattern Length:"/>
+						<mx:ComboBox width="50" />
+
+					</mx:HBox>
+
+					<mx:Canvas label="Canvas 2" width="100%" height="100%" backgroundColor="#99CCFF">
+						<mx:Label text="Notes" />
+					</mx:Canvas>
+
+					<mx:HBox width="100%" paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">
+
+						<mx:Label text="Automation channel:"/>
+						<mx:ComboBox dataProvider="{currentinstruments}" width="100"
+							close="closeHandler(event);"/>
+						<mx:Spacer />
+
+
+						<mx:Button label="New automation"/>
+						<mx:Spacer />
+
+						<mx:Label text="Automation wizard:"/>
+						<mx:ComboBox />
+
+					</mx:HBox>
+
+					<mx:Canvas label="Cutoff automation" width="100%" height="100%" backgroundColor="#FF99CC">
+						<mx:Label text="Automation" />
+					</mx:Canvas>
+
+					<mx:HScrollBar id="bar" width="100%" />
+
+
+				</mx:VBox>
+
+			</mx:Panel>
+		</mx:VBox>
+
+		<mx:Panel id="instrumentpanel" title="Instrument" height="50%" width="70%"
+					paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">
+			<mx:HBox height="100%" width="100%">
+				<mx:VBox height="100%">
+
+					<mx:List id="source" width="250" height="100%"
+						dataProvider="{currentinstruments}"
+						change="this.selectedItem=List(event.target).selectedItem"/>
+
+				</mx:VBox>
+				<mx:VBox>
+
+					<mx:Form width="100%" height="100%">
+
+						<mx:FormHeading label="Instrument settings"/>
+
+						<mx:FormItem label="Name">
+							<mx:TextInput width="200"/>
+						</mx:FormItem>
+
+						<mx:FormItem label="MIDI-Device">
+							<mx:ComboBox dataProvider="{currentinstruments}" width="200" close="closeHandler(event);"/>
+						</mx:FormItem>
+
+						<mx:FormItem label="MIDI-Channel">
+							<mx:ComboBox dataProvider="{currentinstruments}" width="200" close="closeHandler(event);"/>
+						</mx:FormItem>
+
+					</mx:Form>
+
+
+					<mx:Label text="TabNavigator container panel 3"/>
+
+					<mx:Label width="100%" color="blue"
+						text="Programmatically select the panel using a Button control."/>
+
+					<mx:VBox width="100%">
+						<mx:Label text="Selected State: {selectedItem.label}"/>
+						<mx:Label text="State abbreviation: {selectedItem.data}"/>
+					</mx:VBox>
+				</mx:VBox>
+			</mx:HBox>
+		</mx:Panel>
+
+		<mx:Panel id="globalpanel" title="Instrument" height="40%" width="40%"
+					paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">
+			<mx:HBox height="100%" width="100%">
+
+				<mx:VBox>
+
+					<mx:Form width="100%" height="100%">
+
+						<mx:FormHeading label="Global settings"/>
+
+						<mx:FormItem label="BPM">
+							<mx:TextInput id="insname" width="200"/>
+						</mx:FormItem>
+
+						<mx:FormItem label="Quantization">
+							<mx:ComboBox dataProvider="{currentinstruments}" width="200" close="closeHandler(event);"/>
+						</mx:FormItem>
+
+						<mx:FormItem label="Bleh">
+							<mx:ComboBox dataProvider="{currentinstruments}" width="200" close="closeHandler(event);"/>
+						</mx:FormItem>
+
+					</mx:Form>
+				</mx:VBox>
+			</mx:HBox>
+		</mx:Panel>
+
+	</mx:ViewStack>
+</mx:Application>

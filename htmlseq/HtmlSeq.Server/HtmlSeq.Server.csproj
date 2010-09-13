@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30D9DAC3-A868-45D9-9458-B4E891E3AF69}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HtmlSeq.Server</RootNamespace>
+    <AssemblyName>HtmlSeq.Server</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Norkay.JavascriptMinimizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Norkay.JavascriptMinimizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Norkay.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Norkay.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HiPerfTimer2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeqThread.cs" />
+    <Compile Include="WebServerInterface.cs" />
+    <Compile Include="State.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlSeq.Common\HtmlSeq.Common.csproj">
+      <Project>{159A0312-1862-4305-A4D3-78C81C2B0972}</Project>
+      <Name>HtmlSeq.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MidiSequencer\MidiSequencer.csproj">
+      <Project>{4EC7EE19-EFF0-429A-BDE8-E2DB0DDD912E}</Project>
+      <Name>MidiSequencer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Possan.WebServer\Possan.WebServer.csproj">
+      <Project>{69D44D22-DC41-4E0C-95FA-A9784479D268}</Project>
+      <Name>Possan.WebServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="static_html\full\common.js" />
+    <Content Include="static_html\full\instruments.js" />
+    <Content Include="static_html\full\jam.css" />
+    <Content Include="static_html\full\jam.js" />
+    <Content Include="static_html\full\img\footerbackground.gif" />
+    <Content Include="static_html\full\img\headerbackground.gif" />
+    <Content Include="static_html\full\img\logo.gif" />
+    <Content Include="static_html\full\img\tab0.gif" />
+    <Content Include="static_html\full\img\tab1.gif" />
+    <Content Include="static_html\full\instruments.htm" />
+    <Content Include="static_html\full\jam.htm" />
+    <Content Include="static_html\full\js\builder.js" />
+    <Content Include="static_html\full\js\controls.js" />
+    <Content Include="static_html\full\js\dragdrop.js" />
+    <Content Include="static_html\full\js\effects.js" />
+    <Content Include="static_html\full\js\prototype.js" />
+    <Content Include="static_html\full\js\scriptaculous.js" />
+    <Content Include="static_html\full\js\slider.js" />
+    <Content Include="static_html\full\js\sound.js" />
+    <Content Include="static_html\full\js\unittest.js" />
+    <Content Include="static_html\full\pattern.htm" />
+    <Content Include="static_html\full\pattern.js" />
+    <Content Include="static_html\full\seq.css" />
+    <Content Include="static_html\full\settings.htm" />
+    <Content Include="static_html\full\settings.js" />
+    <Content Include="static_html\full\song.css" />
+    <Content Include="static_html\full\song.htm" />
+    <Content Include="static_html\full\song.js" />
+    <Content Include="static_html\index.htm" />
+    <Content Include="static_html\full\pattern.css" />
+    <Content Include="static_html\full\instruments.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

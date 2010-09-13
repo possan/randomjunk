@@ -1,0 +1,38 @@
+﻿
+
+.instrumenteditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.instrumenteditor-content .instrumenteditor-top
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+
+.instrumenteditor-content .instrumenteditor-body
+{
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	right: 10px;
+	bottom: 10px;
+	overflow: auto;
+	background-color: #111;
+}
+
+.instrumenteditor-content .instrumenteditor-body .inner
+{
+	padding: 20px;
+}
+
+

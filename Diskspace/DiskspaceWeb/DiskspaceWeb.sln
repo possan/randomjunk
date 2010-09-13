@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskspaceWeb", "DiskspaceWeb\DiskspaceWeb.csproj", "{4A0913F1-3A3D-4F20-8422-44A7E3A620AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskspaceWeb.Tests", "DiskspaceWeb.Tests\DiskspaceWeb.Tests.csproj", "{273C184C-DB2A-48C6-B6B6-260158D54C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskspaceWeb.Data", "..\DiskspaceWeb.Data\DiskspaceWeb.Data.csproj", "{3570509E-B1A6-493B-AAB8-008437BBE8CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A0913F1-3A3D-4F20-8422-44A7E3A620AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0913F1-3A3D-4F20-8422-44A7E3A620AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0913F1-3A3D-4F20-8422-44A7E3A620AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0913F1-3A3D-4F20-8422-44A7E3A620AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273C184C-DB2A-48C6-B6B6-260158D54C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273C184C-DB2A-48C6-B6B6-260158D54C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273C184C-DB2A-48C6-B6B6-260158D54C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273C184C-DB2A-48C6-B6B6-260158D54C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3570509E-B1A6-493B-AAB8-008437BBE8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3570509E-B1A6-493B-AAB8-008437BBE8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3570509E-B1A6-493B-AAB8-008437BBE8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3570509E-B1A6-493B-AAB8-008437BBE8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

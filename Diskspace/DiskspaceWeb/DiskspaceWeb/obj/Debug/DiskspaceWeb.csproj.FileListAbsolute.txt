@@ -1,0 +1,8 @@
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\bin\DiskspaceWeb.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\bin\DiskspaceWeb.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\obj\Debug\ResolveAssemblyReference.cache
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\obj\Debug\DiskspaceWeb.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\obj\Debug\DiskspaceWeb.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\bin\DiskspaceWeb.Data.dll
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\bin\DiskspaceWeb.Data.pdb
+c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\bin\Norkay.Utilities.dll

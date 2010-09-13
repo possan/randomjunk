@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ASPNETDB" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=c:\work\Diskspace\DiskspaceWeb\DiskspaceWeb\App_Data\ASPNETDB.MDF;Integrated Security=True;User Instance=True" SettingsObjectName="DiskspaceWeb.Data.Properties.Settings" SettingsPropertyName="ASPNETDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Measure" Member="Measures">
+    <Type Name="Measure">
+      <Column Name="Id" Member="ID" Storage="_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MeasureSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MeasureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VolumeId" Member="VolumeID" Storage="_VolumeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MeasureUsed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Volume_Measure" Member="Volume" ThisKey="VolumeID" OtherKey="ID" Type="Volume" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Computers" Member="Computers">
+    <Type Name="Computers">
+      <Column Name="Id" Member="ID" Storage="_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ComputerName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="UserId" Member="UserID" Storage="_UserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Computers_Volume" Member="Volumes" ThisKey="ID" OtherKey="ComputerID" Type="Volume" />
+      <Association Name="Users_Computers" Member="Users" Storage="_aspnet_User" ThisKey="UserID" OtherKey="UserID" Type="Users" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="Users">
+    <Type Name="Users">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Member="UserID" Storage="_UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Users_Computers" Member="Computers" ThisKey="UserID" OtherKey="UserID" Type="Computers" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Volumes" Member="Volumes">
+    <Type Name="Volume">
+      <Column Name="Id" Member="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VolumeName" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="ComputerId" Member="ComputerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VolumePath" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Volume_Measure" Member="Measures" ThisKey="ID" OtherKey="VolumeID" Type="Measure" />
+      <Association Name="Computers_Volume" Member="Computers" ThisKey="ComputerID" OtherKey="ID" Type="Computers" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

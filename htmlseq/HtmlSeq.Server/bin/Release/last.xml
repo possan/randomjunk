@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<song>
+  <common>
+    <name>Unnamed</name>
+    <bpm>120</bpm>
+    <duration>32</duration>
+    <beats1>4</beats1>
+    <beats2>4</beats2>
+    <loopstart>1</loopstart>
+    <loopend>7</loopend>
+    <looping>0</looping>
+    <position>0</position>
+  </common>
+  <patterns />
+  <tracks />
+  <instruments />
+</song>

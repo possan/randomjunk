@@ -1,0 +1,7 @@
+C:\work\htpc2\MenuServer.Utilities\obj\Debug\ResolveAssemblyReference.cache
+c:\work\htpc2\MenuServer.Utilities\bin\Debug\MenuServer.Utilities.dll
+c:\work\htpc2\MenuServer.Utilities\bin\Debug\MenuServer.Utilities.pdb
+c:\work\htpc2\MenuServer.Utilities\bin\Debug\MenuServer.Types.dll
+c:\work\htpc2\MenuServer.Utilities\bin\Debug\MenuServer.Types.pdb
+c:\work\htpc2\MenuServer.Utilities\obj\Debug\MenuServer.Utilities.dll
+c:\work\htpc2\MenuServer.Utilities\obj\Debug\MenuServer.Utilities.pdb

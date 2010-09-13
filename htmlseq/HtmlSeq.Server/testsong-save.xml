@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<song>
+  <common>
+    <name>Unnamed</name>
+    <bpm>120</bpm>
+    <duration>32</duration>
+    <beats1>4</beats1>
+    <beats2>4</beats2>
+    <loopstart>1</loopstart>
+    <loopend>7</loopend>
+    <looping>0</looping>
+    <position>0</position>
+  </common>
+  <patterns>
+    <pattern id="pat00001" name="Lead1" instrument="ins1" duration="4">
+      <notes>
+        <note id="note11_1" from="0" to="100" note="30" vel="100" />
+        <note id="note4464902380920" from="300" to="400" note="33" vel="100" />
+        <note id="note4464907148251" from="200" to="300" note="38" vel="100" />
+        <note id="note4464906018693" from="100" to="200" note="43" vel="100" />
+      </notes>
+      <automations>
+        <automation id="aut85" channel="85" macro="">
+          <keys>
+            <key id="pa0" time="0" value="100" />
+            <key id="pa1" time="100" value="10" />
+            <key id="pa2" time="1300" value="0" />
+          </keys>
+        </automation>
+      </automations>
+    </pattern>
+    <pattern id="pat00002" name="Lead2" instrument="ins2" duration="8">
+      <notes>
+        <note id="note22_1" from="300" to="400" note="38" vel="100" />
+        <note id="note2784625775821" from="400" to="500" note="40" vel="100" />
+        <note id="note5012290315120" from="600" to="700" note="36" vel="100" />
+        <note id="note5012297317511" from="300" to="400" note="36" vel="100" />
+        <note id="note5012298719762" from="100" to="200" note="44" vel="100" />
+        <note id="note5012298312774" from="100" to="200" note="41" vel="100" />
+        <note id="note5012299681125" from="0" to="100" note="44" vel="100" />
+        <note id="note5012296230786" from="300" to="400" note="43" vel="100" />
+        <note id="note5012295863077" from="200" to="300" note="46" vel="100" />
+        <note id="note5012299472318" from="400" to="500" note="44" vel="100" />
+        <note id="note5012292536089" from="500" to="600" note="44" vel="100" />
+        <note id="note50122937154410" from="600" to="700" note="44" vel="100" />
+        <note id="note50122923875611" from="700" to="800" note="45" vel="100" />
+        <note id="note50122906546612" from="700" to="800" note="42" vel="100" />
+        <note id="note50122946955313" from="0" to="100" note="36" vel="100" />
+        <note id="note50122936416714" from="100" to="200" note="36" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+    <pattern id="pat00003" name="Lead3" instrument="ins2" duration="16">
+      <notes />
+      <automations />
+    </pattern>
+    <pattern id="pat00004" name="Lead4" instrument="ins3" duration="16">
+      <notes />
+      <automations />
+    </pattern>
+  </patterns>
+  <tracks>
+    <track id="trk1" name="Lead" instrument="ins1" livepattern="" volume="100" mute="0" solo="0">
+      <items>
+        <item id="item1" from="0" to="8" pattern="pat1" transpose="0" speed="100" />
+        <item id="item2" from="10" to="18" pattern="pat2" transpose="0" speed="100" />
+        <item id="item3" from="20" to="28" pattern="pat3" transpose="0" speed="100" />
+      </items>
+    </track>
+    <track id="trk2" name="Synth" instrument="ins2" livepattern="" volume="100" mute="0" solo="0">
+      <items />
+    </track>
+    <track id="trk3" name="Bass" instrument="ins3" livepattern="" volume="100" mute="0" solo="0">
+      <items />
+    </track>
+  </tracks>
+  <instruments>
+    <instrument id="ins1" name="First instrument" type="" midichannel="1" midipatch="30" mididevice="0" />
+    <instrument id="ins2" name="Second instrument" type="" midichannel="9" midipatch="30" mididevice="0" />
+    <instrument id="ins3" name="Third instrument" type="" midichannel="1" midipatch="30" mididevice="0" />
+  </instruments>
+</song>

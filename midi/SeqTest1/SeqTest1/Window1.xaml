@@ -1,0 +1,9 @@
+﻿<Window x:Class="SeqTest1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="328" Width="602" Initialized="Window_Initialized" Background="DarkGray" KeyUp="Window_KeyUp" StateChanged="Window_StateChanged" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <DockPanel Name="panel1" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+         </DockPanel>
+    </Grid>
+</Window>

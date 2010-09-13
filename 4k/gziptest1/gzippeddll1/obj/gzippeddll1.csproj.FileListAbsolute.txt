@@ -1,0 +1,10 @@
+C:\work\4k\gziptest1\gzippeddll1\obj\Debug\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\gzippeddll1\bin\Debug\a.dll
+C:\work\4k\gziptest1\gzippeddll1\bin\Debug\a.pdb
+C:\work\4k\gziptest1\gzippeddll1\obj\Debug\a.dll
+C:\work\4k\gziptest1\gzippeddll1\obj\Debug\a.pdb
+C:\work\4k\gziptest1\gzippeddll1\bin\Release\a.dll
+C:\work\4k\gziptest1\gzippeddll1\bin\Release\a.pdb
+C:\work\4k\gziptest1\gzippeddll1\obj\Release\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\gzippeddll1\obj\Release\a.dll
+C:\work\4k\gziptest1\gzippeddll1\obj\Release\a.pdb

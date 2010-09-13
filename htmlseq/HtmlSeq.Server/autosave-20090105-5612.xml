@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<song>
+  <common>
+    <name>Unnamed</name>
+    <bpm>120</bpm>
+    <duration>32</duration>
+    <beats1>4</beats1>
+    <beats2>4</beats2>
+    <loopstart>1</loopstart>
+    <loopend>7</loopend>
+    <looping>0</looping>
+    <position>0</position>
+  </common>
+  <patterns>
+    <pattern id="pat3009755544820" name="pat1" instrument="" duration="16">
+      <notes />
+      <automations />
+    </pattern>
+    <pattern id="pat4465392096310" name="pattern1" instrument="" duration="16">
+      <notes />
+      <automations />
+    </pattern>
+    <pattern id="pat1255625274720" name="x" instrument="ins6587888973701" duration="16">
+      <notes>
+        <note id="note5115898665470" from="0" to="100" note="36" vel="100" />
+        <note id="note5115895293441" from="400" to="500" note="36" vel="100" />
+        <note id="note5115897639832" from="800" to="900" note="36" vel="100" />
+        <note id="note5115894686743" from="1200" to="1300" note="36" vel="100" />
+        <note id="note5115898271714" from="1500" to="1600" note="36" vel="100" />
+        <note id="note5115897104335" from="1300" to="1400" note="40" vel="100" />
+        <note id="note5115898231186" from="400" to="500" note="40" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+  </patterns>
+  <tracks />
+  <instruments>
+    <instrument id="ins6587886266660" name="Xxx" type="" midichannel="0" midipatch="0" mididevice="0" />
+    <instrument id="ins6587888973701" name="Drums" type="" midichannel="9" midipatch="0" mididevice="0" />
+  </instruments>
+</song>

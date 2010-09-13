@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SeqTest1.TopBlock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="99" Width="714">
+    <DockPanel Name="dockPanel1" LastChildFill="False" Height="100">
+        <Canvas Height="100" Name="canvas3" Width="173">
+            <Label Canvas.Left="23" Canvas.Top="20" Height="28" Name="label1" Width="120">Label</Label>
+        </Canvas>
+        <Canvas Height="100" Name="canvas2" Width="247">
+            <Label Canvas.Left="10" Canvas.Top="10" Height="28" Name="label2" Width="120">Label</Label>
+        </Canvas>
+        <Canvas Height="100" Name="canvas1" Width="100" DockPanel.Dock="Right">
+            <Label Canvas.Left="10" Canvas.Top="10" Height="28" Name="label3" Width="120">Label</Label>
+        </Canvas>
+    </DockPanel>
+</UserControl>

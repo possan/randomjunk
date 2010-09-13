@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: glAss - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP40.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FA /Fa"Debug/" /Fp"Debug/glAss.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\prj64k\glAss (eventad)\misccode\gla_stuff.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP40.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /profile /map:"Debug/glAss.map" /debug /machine:I386 /out:"Debug/glAss.exe" 
+".\images\gif_clouds.obj"
+".\images\gif_flare.obj"
+".\images\gif_font.obj"
+".\images\gif_green.obj"
+".\images\gif_grid.obj"
+".\images\gif_names.obj"
+".\images\gif_psikorp2.obj"
+".\images\gif_psikorp3.obj"
+".\images\gif_psikorp4.obj"
+".\images\gif_rost.obj"
+".\images\gif_silu.obj"
+".\images\gif_title.obj"
+".\images\gif_twister2.obj"
+".\images\intromusic.obj"
+".\Debug\p_aftershit.obj"
+".\Debug\p_cubes.obj"
+".\Debug\p_greetings.obj"
+".\Debug\p_klask.obj"
+".\Debug\p_loading.obj"
+".\Debug\p_misc.obj"
+".\Debug\p_name.obj"
+".\Debug\p_psyk.obj"
+".\Debug\p_silu.obj"
+".\Debug\p_sphere.obj"
+".\Debug\p_tunnel.obj"
+".\Debug\p_twist3d.obj"
+".\Debug\p_twister.obj"
+".\Debug\p_wirelandscape.obj"
+".\Debug\events.obj"
+".\Debug\gla_stuff.obj"
+".\Debug\gla_stuff2.obj"
+".\Debug\newmath.obj"
+".\Debug\startup.obj"
+".\Debug\resurser.res"
+"..\fMod\minifmod.lib"
+"..\..\sdk\psdk\Lib\GlAux.Lib"
+"..\..\sdk\psdk\Lib\GlU32.Lib"
+"..\nanolibc\Release\nanolibc.lib"
+"..\..\sdk\psdk\Lib\OpenGL32.Lib"
+"..\..\sdk\psdk\Lib\WinMM.Lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41.tmp"
+<h3>Output Window</h3>
+Compiling...
+gla_stuff.cpp
+Linking...
+.\images\gif_clouds.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_flare.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_font.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_green.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_grid.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_names.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_psikorp2.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_psikorp3.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_psikorp4.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_rost.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_silu.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_title.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\gif_twister2.obj : warning LNK4033: converting object format from OMF to COFF
+.\images\intromusic.obj : warning LNK4033: converting object format from OMF to COFF
+
+
+
+<h3>Results</h3>
+glAss.exe - 0 error(s), 14 warning(s)
+</pre>
+</body>
+</html>

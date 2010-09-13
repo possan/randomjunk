@@ -1,0 +1,10 @@
+
+NanoLIBC v1.00 by illuminator/psikorp
+
+Versions:
+
+  1.01: Very minor changes...
+        - I made a very simple random routine, we need a better one.
+
+  1.00: First public release.
+        - not all math routines are working or has been implemented.

@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glAss", "glAss.vcproj", "{52D59C4C-2A95-40DC-A9BB-D079B9D00805}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Release
+		ConfigName.1 = Debug
+		DoSign = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

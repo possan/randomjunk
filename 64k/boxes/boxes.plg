@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: boxes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP2120.TMP" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/boxes.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\PRJ64K\boxes\p_horboll.cpp"
+]
+Creating command line "D:\VECTORC\VECTORCL.EXE @C:\WINDOWS\TEMP\RSP2120.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP2121.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/boxes.pdb" /map:"Release/boxes.map" /machine:I386 /out:"Release/boxes.exe" 
+.\Release\boxes_stuff.obj
+.\Release\Events.obj
+.\Release\gla_stuff.obj
+.\Release\gla_stuff2.obj
+.\Release\Newmath.obj
+.\Release\p_cloth.obj
+.\Release\p_horboll.obj
+.\Release\p_test.obj
+.\Release\Startup.obj
+..\fMod\Release\Main.obj
+.\texturfan.obj
+.\gif_twister2.obj
+.\texturfan2.obj
+..\..\Sdk\Psdk\Lib\OpenGL32.Lib
+..\..\Sdk\Psdk\Lib\GlU32.Lib
+..\fMod\Minifmod.lib
+..\..\Sdk\Psdk\Lib\WinMM.Lib
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP2121.TMP"
+<h3>Output Window</h3>
+Compiling...
+p_horboll.cpp
+D:\PRJ64K\boxes\p_horboll.cpp(111) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\PRJ64K\boxes\p_horboll.cpp(112) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\PRJ64K\boxes\p_horboll.cpp(113) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\PRJ64K\boxes\p_horboll.cpp(97) : warning C4101: 'mag1' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(96) : warning C4101: 'v1' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(97) : warning C4101: 'mag2' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(96) : warning C4101: 'v2' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(97) : warning C4101: 'ext1' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(97) : warning C4101: 'ext2' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(96) : warning C4101: 'v' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(95) : warning C4101: 'k' : unreferenced local variable
+D:\PRJ64K\boxes\p_horboll.cpp(98) : warning C4101: 'damping' : unreferenced local variable
+Linking...
+.\texturfan.obj : warning LNK4033: converting object format from OMF to COFF
+.\gif_twister2.obj : warning LNK4033: converting object format from OMF to COFF
+.\texturfan2.obj : warning LNK4033: converting object format from OMF to COFF
+LINK : warning LNK4098: defaultlib "MSVCRT" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4089: all references to "MSVCRT.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "WINMM.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+boxes.exe - 0 error(s), 19 warning(s)
+</pre>
+</body>
+</html>

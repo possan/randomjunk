@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<song>
+  <common>
+    <name>Unnamed</name>
+    <bpm>150,0</bpm>
+    <duration>32</duration>
+    <beats1>4</beats1>
+    <beats2>4</beats2>
+    <loopstart>1</loopstart>
+    <loopend>7</loopend>
+    <looping>0</looping>
+    <position>0</position>
+  </common>
+  <patterns>
+    <pattern id="" name="Lead1">
+      <notes>
+        <note id="note1" from="0" to="400" note="30" vel="100" />
+        <note id="note2" from="200" to="400" note="24" vel="100" />
+        <note id="note3" from="400" to="1600" note="20" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="5" to="105" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="70" to="170" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="100" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="315" to="415" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="35" to="135" note="0" vel="100" />
+        <note id="dummy000" from="15" to="115" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="0" vel="100" />
+        <note id="dummy000" from="0" to="0" note="125" vel="100" />
+        <note id="dummy000" from="340" to="440" note="123" vel="100" />
+        <note id="dummy000" from="420" to="520" note="122" vel="100" />
+        <note id="dummy000" from="395" to="495" note="122" vel="100" />
+        <note id="dummy000" from="190" to="290" note="122" vel="100" />
+        <note id="dummy000" from="0" to="0" note="122" vel="100" />
+        <note id="dummy000" from="0" to="0" note="122" vel="100" />
+        <note id="dummy000" from="10" to="110" note="127" vel="100" />
+        <note id="dummy000" from="60" to="160" note="123" vel="100" />
+        <note id="dummy000" from="0" to="0" note="123" vel="100" />
+        <note id="dummy000" from="0" to="0" note="125" vel="100" />
+        <note id="dummy000" from="0" to="0" note="125" vel="100" />
+        <note id="dummy000" from="0" to="210" note="126" vel="100" />
+        <note id="dummy000" from="0" to="0" note="121" vel="100" />
+        <note id="dummy000" from="50" to="150" note="124" vel="100" />
+        <note id="dummy000" from="100" to="100" note="123" vel="100" />
+        <note id="dummy000" from="100" to="200" note="123" vel="100" />
+        <note id="dummy000" from="200" to="300" note="120" vel="100" />
+      </notes>
+      <automations>
+        <instrument id="aut85" channel="85" macro="">
+          <keys>
+            <note id="pa0" time="0" value="100" />
+            <note id="pa1" time="100" value="10" />
+            <note id="pa2" time="1300" value="0" />
+          </keys>
+        </instrument>
+      </automations>
+    </pattern>
+  </patterns>
+  <tracks>
+    <note id="trk1" name="Lead" instrument="ins1" livepat="" cuepat="" volume="100">
+      <items>
+        <item id="item1" from="0" to="8" pattern="pat1" transpose="0" speed="100" />
+        <item id="item2" from="10" to="18" pattern="pat2" transpose="0" speed="100" />
+        <item id="item3" from="20" to="28" pattern="pat3" transpose="0" speed="100" />
+      </items>
+    </note>
+  </tracks>
+  <instruments>
+    <instrument id="ins1" name="First instrument" type="" midichannel="1" midipatch="30" />
+  </instruments>
+</song>

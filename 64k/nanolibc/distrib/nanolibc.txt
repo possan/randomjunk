@@ -1,0 +1,58 @@
+
+  NanoLIBC v1.01 by illuminator/psikorp
+
+  a minimal replacement for libc used by Visual C/C++
+
+------------------------------------------------------------------------------
+
+Information:
+
+  This lib is not intended to be used in large applications.
+  It's intended for 64k and maybe 4k intros.
+
+  THE CODE IS VERY UNOPTIMIZED
+
+------------------------------------------------------------------------------
+
+Usage:
+
+  1) Open your project in VC.
+  2) Use the menus: Project > Settings
+  3) Click on the link page.
+  4) Enable the 'Ignore all default libraries' checkbox.
+  5) Add nanolibc.lib to your project.
+  6) Compile.
+  7) Pack with upx or other excellent packer.
+
+------------------------------------------------------------------------------
+
+Bugs:
+
+  i have no idea why visual c needs a __Cfmod routine if i call fmod(...) 
+  it seems to need a __Casin, __Cacos and a __Catan too :/
+           
+------------------------------------------------------------------------------
+
+Compiling:
+
+  It uses Microsoft Assembler right now but i guess it could be ported to NASM.
+  change the custom build steps for *.asm if you want to compile.
+
+------------------------------------------------------------------------------
+
+Thanks:
+
+  Whizzter for the Wext386 libraries
+  G<SZ> for the tinymath headers
+
+------------------------------------------------------------------------------
+
+Contact:
+
+  if you have fixed any nice bug or want to
+  contact me for another reason, please do...
+
+  illuminator@psikorp.com
+  possan@mail.wineasy.se
+  www.demoparty.com/~possan
+  

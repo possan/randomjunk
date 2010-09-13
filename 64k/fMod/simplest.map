@@ -1,0 +1,219 @@
+ simplest2
+
+ Timestamp is 38f4d91b (Wed Apr 12 22:14:19 2000)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00003450H .text                   CODE
+ 0002:00000000 000000a4H .idata$5                DATA
+ 0002:000000a8 0000007cH .rdata                  DATA
+ 0002:00000124 0000003cH .idata$2                DATA
+ 0002:00000160 00000014H .idata$3                DATA
+ 0002:00000174 000000a4H .idata$4                DATA
+ 0002:00000218 00000214H .idata$6                DATA
+ 0002:0000042c 00000000H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000004H .CRT$XCZ                DATA
+ 0003:00000008 00000004H .CRT$XIA                DATA
+ 0003:0000000c 00000004H .CRT$XIZ                DATA
+ 0003:00000010 000001e4H .data                   DATA
+ 0003:000001f4 000003d4H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       ?sampleloadcallback@@YAXPAXHHHH@Z 00401000 f   main.obj
+ 0001:00000083       ?fileopen@@YAIPAD@Z        00401083 f   main.obj
+ 0001:00000095       ?fileclose@@YAXI@Z         00401095 f   main.obj
+ 0001:000000a1       ?fileread@@YAHPAXHI@Z      004010a1 f   main.obj
+ 0001:000000b9       ?fileseek@@YAXIHC@Z        004010b9 f   main.obj
+ 0001:000000d1       ?filetell@@YAHI@Z          004010d1 f   main.obj
+ 0001:000000dd       _main                      004010dd f   main.obj
+ 0001:000001e2       _FSOUND_Init               004011e2 f   minifmod:Fsound.obj
+ 0001:000003e0       _FSOUND_Close              004013e0 f   minifmod:Fsound.obj
+ 0001:00000438       _FSOUND_Sample_Free        00401438 f   minifmod:Fsound.obj
+ 0001:00000460       _FSOUND_PlaySound          00401460 f   minifmod:Fsound.obj
+ 0001:000004b5       _FSOUND_StopSound          004014b5 f   minifmod:Fsound.obj
+ 0001:000004d3       _FMUSIC_SetBPM             004014d3 f   minifmod:Fmusic.obj
+ 0001:00000508       _FMUSIC_SpawnNewVirtualChannel 00401508 f   minifmod:Fmusic.obj
+ 0001:0000056a       _FMUSIC_Load               0040156a f   minifmod:Fmusic.obj
+ 0001:000005d1       _FMUSIC_LoadSong           004015d1 f   minifmod:Fmusic.obj
+ 0001:000005e4       _FMUSIC_FreeSong           004015e4 f   minifmod:Fmusic.obj
+ 0001:000006aa       _FMUSIC_PlaySong           004016aa f   minifmod:Fmusic.obj
+ 0001:00000782       _FMUSIC_StopSong           00401782 f   minifmod:Fmusic.obj
+ 0001:0000081d       _FMUSIC_GetOrder           0040181d f   minifmod:Fmusic.obj
+ 0001:0000082d       _FMUSIC_GetRow             0040182d f   minifmod:Fmusic.obj
+ 0001:0000083d       _FSOUND_File_SetCallbacks  0040183d f   minifmod:system_file.obj
+ 0001:000008aa       _FSOUND_File_Open          004018aa f   minifmod:system_file.obj
+ 0001:000008e6       _FSOUND_File_Close         004018e6 f   minifmod:system_file.obj
+ 0001:00000902       _FSOUND_File_Read          00401902 f   minifmod:system_file.obj
+ 0001:00000920       _FSOUND_File_Seek          00401920 f   minifmod:system_file.obj
+ 0001:0000093d       _FSOUND_File_Tell          0040193d f   minifmod:system_file.obj
+ 0001:00000951       _FSOUND_Software_DoubleBufferThread 00401951 f   minifmod:sound_software.obj
+ 0001:00000b4f       _FSOUND_Software_Initialize 00401b4f f   minifmod:sound_software.obj
+ 0001:00000c1a       _FSOUND_Software_Close     00401c1a f   minifmod:sound_software.obj
+ 0001:00000c73       _FSOUND_Software_SetFrequency 00401c73 f   minifmod:sound_software.obj
+ 0001:00000cbf       _FSOUND_Software_SetVolume 00401cbf f   minifmod:sound_software.obj
+ 0001:00000d00       _FSOUND_Software_SetPan    00401d00 f   minifmod:sound_software.obj
+ 0001:00000d3a       _LinkedListAddNodeAfter    00401d3a f   minifmod:linkedlist.obj
+ 0001:00000d54       _LinkedListAddNodeBefore   00401d54 f   minifmod:linkedlist.obj
+ 0001:00000d6d       _LinkedListRemoveNode      00401d6d f   minifmod:linkedlist.obj
+ 0001:00000d86       _FMUSIC_XM_Portamento      00401d86 f   minifmod:music_formatxm.obj
+ 0001:00000dc9       _FMUSIC_XM_Vibrato         00401dc9 f   minifmod:music_formatxm.obj
+ 0001:00000e4e       _FMUSIC_XM_ProcessEnvelope 00401e4e f   minifmod:music_formatxm.obj
+ 0001:00000f47       _FMUSIC_XM_InstrumentVibrato 00401f47 f   minifmod:music_formatxm.obj
+ 0001:00000ffc       _FMUSIC_XM_ProcessVolumeByte 00401ffc f   minifmod:music_formatxm.obj
+ 0001:000010c8       _FMUSIC_XM_GetAmigaPeriod  004020c8 f   minifmod:music_formatxm.obj
+ 0001:000011a7       _FMUSIC_XM_UpdateFlags     004021a7 f   minifmod:music_formatxm.obj
+ 0001:0000130d       _FMUSIC_XM_ResetVcptr      0040230d f   minifmod:music_formatxm.obj
+ 0001:00001376       _FMUSIC_UpdateXMNote       00402376 f   minifmod:music_formatxm.obj
+ 0001:00001bf8       _FMUSIC_UpdateXMEffects    00402bf8 f   minifmod:music_formatxm.obj
+ 0001:0000233a       _FMUSIC_UpdateXM           0040333a f   minifmod:music_formatxm.obj
+ 0001:000023fa       _FMUSIC_LoadXM             004033fa f   minifmod:music_formatxm.obj
+ 0001:00002a94       _FSOUND_Mixer_FPU_Ramp     00403a94 f   minifmod:mixer_fpu_ramp.obj
+ 0001:000030de       _FSOUND_MixerClipCopy_Float32 004040de f   minifmod:mixer_clipcopy.obj
+ 0001:00003270       _mainCRTStartup            00404270 f   MSVCRT:crtexe.obj
+ 0001:000033c0       _calloc                    004043c0 f   MSVCRT:MSVCRT.dll
+ 0001:000033c6       _free                      004043c6 f   MSVCRT:MSVCRT.dll
+ 0001:000033d0       __ftol                     004043d0 f   MSVCRT:MSVCRT.dll
+ 0001:000033d6       _memset                    004043d6 f   MSVCRT:MSVCRT.dll
+ 0001:000033dc       _sin                       004043dc f   MSVCRT:MSVCRT.dll
+ 0001:000033e2       _abs                       004043e2 f   MSVCRT:MSVCRT.dll
+ 0001:000033e8       _pow                       004043e8 f   MSVCRT:MSVCRT.dll
+ 0001:000033ee       __XcptFilter               004043ee f   MSVCRT:MSVCRT.dll
+ 0001:000033f4       __initterm                 004043f4 f   MSVCRT:MSVCRT.dll
+ 0001:00003400       __setdefaultprecision      00404400 f   MSVCRT:fp8.obj
+ 0001:00003420       __matherr                  00404420 f   MSVCRT:merr.obj
+ 0001:00003430       __setargv                  00404430 f   MSVCRT:dllargv.obj
+ 0001:00003440       __except_handler3          00404440 f   MSVCRT:MSVCRT.dll
+ 0001:00003446       __controlfp                00404446 f   MSVCRT:MSVCRT.dll
+ 0002:00000000       __imp__Sleep@4             00405000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__CreateThread@24     00405004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__SetThreadPriority@8 00405008     kernel32:KERNEL32.dll
+ 0002:0000000c       \177KERNEL32_NULL_THUNK_DATA 0040500c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp___exit               00405010     MSVCRT:MSVCRT.dll
+ 0002:00000014       __imp____p___initenv       00405014     MSVCRT:MSVCRT.dll
+ 0002:00000018       __imp__exit                00405018     MSVCRT:MSVCRT.dll
+ 0002:0000001c       __imp__kbhit               0040501c     MSVCRT:MSVCRT.dll
+ 0002:0000001c       __imp___kbhit              0040501c     MSVCRT:MSVCRT.dll
+ 0002:00000020       __imp__printf              00405020     MSVCRT:MSVCRT.dll
+ 0002:00000024       __imp__fopen               00405024     MSVCRT:MSVCRT.dll
+ 0002:00000028       __imp__fclose              00405028     MSVCRT:MSVCRT.dll
+ 0002:0000002c       __imp__fread               0040502c     MSVCRT:MSVCRT.dll
+ 0002:00000030       __imp__fseek               00405030     MSVCRT:MSVCRT.dll
+ 0002:00000034       __imp__ftell               00405034     MSVCRT:MSVCRT.dll
+ 0002:00000038       __imp__calloc              00405038     MSVCRT:MSVCRT.dll
+ 0002:0000003c       __imp__free                0040503c     MSVCRT:MSVCRT.dll
+ 0002:00000040       __imp___ftol               00405040     MSVCRT:MSVCRT.dll
+ 0002:00000044       __imp__memset              00405044     MSVCRT:MSVCRT.dll
+ 0002:00000048       __imp__sin                 00405048     MSVCRT:MSVCRT.dll
+ 0002:0000004c       __imp__abs                 0040504c     MSVCRT:MSVCRT.dll
+ 0002:00000050       __imp__pow                 00405050     MSVCRT:MSVCRT.dll
+ 0002:00000054       __imp____set_app_type      00405054     MSVCRT:MSVCRT.dll
+ 0002:00000058       __imp___XcptFilter         00405058     MSVCRT:MSVCRT.dll
+ 0002:0000005c       __imp___getch              0040505c     MSVCRT:MSVCRT.dll
+ 0002:0000005c       __imp__getch               0040505c     MSVCRT:MSVCRT.dll
+ 0002:00000060       __imp___except_handler3    00405060     MSVCRT:MSVCRT.dll
+ 0002:00000064       __imp____getmainargs       00405064     MSVCRT:MSVCRT.dll
+ 0002:00000068       __imp___initterm           00405068     MSVCRT:MSVCRT.dll
+ 0002:0000006c       __imp____setusermatherr    0040506c     MSVCRT:MSVCRT.dll
+ 0002:00000070       __imp___adjust_fdiv        00405070     MSVCRT:MSVCRT.dll
+ 0002:00000074       __imp____p__commode        00405074     MSVCRT:MSVCRT.dll
+ 0002:00000078       __imp____p__fmode          00405078     MSVCRT:MSVCRT.dll
+ 0002:0000007c       __imp___controlfp          0040507c     MSVCRT:MSVCRT.dll
+ 0002:00000080       \177MSVCRT_NULL_THUNK_DATA 00405080     MSVCRT:MSVCRT.dll
+ 0002:00000084       __imp__waveOutWrite@12     00405084     winmm:WINMM.dll
+ 0002:00000088       __imp__waveOutReset@4      00405088     winmm:WINMM.dll
+ 0002:0000008c       __imp__waveOutClose@4      0040508c     winmm:WINMM.dll
+ 0002:00000090       __imp__waveOutOpen@24      00405090     winmm:WINMM.dll
+ 0002:00000094       __imp__waveOutPrepareHeader@12 00405094     winmm:WINMM.dll
+ 0002:00000098       __imp__waveOutGetPosition@12 00405098     winmm:WINMM.dll
+ 0002:0000009c       __imp__waveOutUnprepareHeader@12 0040509c     winmm:WINMM.dll
+ 0002:000000a0       \177WINMM_NULL_THUNK_DATA  004050a0     winmm:WINMM.dll
+ 0002:000000a8       __real@4@3ff583126e978d4fe000 004050a8     minifmod:Fmusic.obj
+ 0002:000000ac       __real@4@4008fa00000000000000 004050ac     minifmod:Fmusic.obj
+ 0002:000000b0       __real@4@3ffdccccccccccccd000 004050b0     minifmod:Fmusic.obj
+ 0002:000000b4       __real@4@3fff8000000000000000 004050b4     minifmod:sound_software.obj
+ 0002:000000b8       __real@8@40078000000000000000 004050b8     minifmod:music_formatxm.obj
+ 0002:000000c0       __real@8@3ffac90fd7e45803d000 004050c0     minifmod:music_formatxm.obj
+ 0002:000000c8       __real@8@40058000000000000000 004050c8     minifmod:music_formatxm.obj
+ 0002:000000d0       __real@8@3fffc90fd7e45803d000 004050d0     minifmod:music_formatxm.obj
+ 0002:000000d8       __real@8@4002d600000000000000 004050d8     minifmod:music_formatxm.obj
+ 0002:000000e0       __real@8@40008000000000000000 004050e0     minifmod:music_formatxm.obj
+ 0002:000000e8       __real@4@3ffbaaaaaaaaaaaaa800 004050e8     minifmod:music_formatxm.obj
+ 0002:000000f0       __real@8@400c82ac000000000000 004050f0     minifmod:music_formatxm.obj
+ 0002:000000f8       __real@4@3ff5aaaaaaaaaaaaa800 004050f8     minifmod:music_formatxm.obj
+ 0002:000000fc       __real@4@400b9000000000000000 004050fc     minifmod:music_formatxm.obj
+ 0002:00000100       __real@4@3fe3ff00000000000000 00405100     minifmod:music_formatxm.obj
+ 0002:00000124       __IMPORT_DESCRIPTOR_WINMM  00405124     winmm:WINMM.dll
+ 0002:00000138       __IMPORT_DESCRIPTOR_MSVCRT 00405138     MSVCRT:MSVCRT.dll
+ 0002:0000014c       __IMPORT_DESCRIPTOR_KERNEL32 0040514c     kernel32:KERNEL32.dll
+ 0002:00000160       __NULL_IMPORT_DESCRIPTOR   00405160     winmm:WINMM.dll
+ 0003:00000000       ___xc_a                    00406000     MSVCRT:cinitexe.obj
+ 0003:00000004       ___xc_z                    00406004     MSVCRT:cinitexe.obj
+ 0003:00000008       ___xi_a                    00406008     MSVCRT:cinitexe.obj
+ 0003:0000000c       ___xi_z                    0040600c     MSVCRT:cinitexe.obj
+ 0003:00000010       ??_C@_0DM@KAML@pointer?5?$DN?5?$CFp?5length?5?$DN?5?$CFd?5bits?5?$DN?5@ 00406010     main.obj
+ 0003:0000004c       ??_C@_02JKAF@rb?$AA@       0040604c     main.obj
+ 0003:00000050       ??_C@_01BJG@?6?$AA@        00406050     main.obj
+ 0003:00000054       ??_C@_0BK@PKGK@order?5?$DN?5?$CFd?0?5row?5?$DN?5?$CFd?5?5?5?5?$AN?$AA@ 00406054     main.obj
+ 0003:00000070       ??_C@_0BB@PBFC@Playing?5song?4?4?4?6?$AA@ 00406070     main.obj
+ 0003:00000084       ??_C@_0EL@LJEF@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 00406084     main.obj
+ 0003:000000d0       ??_C@_0BH@CJLP@Press?5any?5key?5to?5quit?6?$AA@ 004060d0     main.obj
+ 0003:000000e8       ??_C@_0BE@ENNC@Error?5loading?5song?6?$AA@ 004060e8     main.obj
+ 0003:000000fc       ??_C@_0BL@FILB@Error?5upon?5initialization?6?$AA@ 004060fc     main.obj
+ 0003:00000118       ??_C@_0BN@JHCB@Syntax?3?5simplest?5infile?4xm?6?6?$AA@ 00406118     main.obj
+ 0003:00000138       ??_C@_0CL@JIBI@Copyright?5?$CIc?$CJ?5Firelight?5Multimed@ 00406138     main.obj
+ 0003:00000164       ??_C@_0BN@JHPI@MINIFMOD?5example?5XM?5player?4?6?$AA@ 00406164     main.obj
+ 0003:00000184       ??_C@_0DP@NDGH@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 00406184     main.obj
+ 0003:000001c4       _FSOUND_BufferSizeMs       004061c4     minifmod:Fsound.obj
+ 0003:000001c8       _FMUSIC_Head               004061c8     minifmod:Fmusic.obj
+ 0003:000001d0       _FSOUND_Software_ThreadFinished 004061d0     minifmod:sound_software.obj
+ 0003:000001d4       ??_C@_0BC@JHGC@Extended?5Module?3?5?$AA@ 004061d4     minifmod:music_formatxm.obj
+ 0003:000001f0       ___defaultmatherr          004061f0     MSVCRT:merr.obj
+ 0003:000001f4       _FSOUND_Channel            004061f4     minifmod:Fsound.obj
+ 0003:000001f8       _FSOUND_SoftwareChannels   004061f8     minifmod:Fsound.obj
+ 0003:000001fc       _FSOUND_File_OpenCallback  004061fc     minifmod:system_file.obj
+ 0003:00000200       _FSOUND_File_CloseCallback 00406200     minifmod:system_file.obj
+ 0003:00000204       _FSOUND_File_ReadCallback  00406204     minifmod:system_file.obj
+ 0003:00000208       _FSOUND_File_SeekCallback  00406208     minifmod:system_file.obj
+ 0003:0000020c       _FSOUND_File_TellCallback  0040620c     minifmod:system_file.obj
+ 0003:00000210       _FSOUND_Mixer              00406210     minifmod:sound_software.obj
+ 0003:00000214       _FSOUND_HWMixOffset        00406214     minifmod:sound_software.obj
+ 0003:00000218       _FSOUND_ChannelsMixed      00406218     minifmod:sound_software.obj
+ 0003:0000021c       _FSOUND_Software_Exit      0040621c     minifmod:sound_software.obj
+ 0003:0000021d       _FSOUND_Software_UpdateMutex 0040621d     minifmod:sound_software.obj
+ 0003:00000220       _FSOUND_Software_hThread   00406220     minifmod:sound_software.obj
+ 0003:0000022c       _tempchar                  0040622c     minifmod:music_formatxm.obj
+ 0003:00000278       _mix_volumerampsteps       00406278     minifmod:mixer_fpu_ramp.obj
+ 0003:0000027c       _mix_1overvolumerampsteps  0040627c     minifmod:mixer_fpu_ramp.obj
+ 0003:00000284       __dowildcard               00406284     MSVCRT:wildcard.obj
+ 0003:00000288       __newmode                  00406288     MSVCRT:_newmode.obj
+ 0003:0000028c       __commode                  0040628c     MSVCRT:xncommod.obj
+ 0003:00000290       __fmode                    00406290     MSVCRT:xtxtmode.obj
+ 0003:00000294       _cptr                      00406294     <common>
+ 0003:00000298       _FSOUND_BufferSize         00406298     <common>
+ 0003:0000029c       _FSOUND_MixBufferMem       0040629c     <common>
+ 0003:000002a0       _FSOUND_OOMixRate          004062a0     <common>
+ 0003:000002c0       _FMUSIC_DummyVirtualChannel 004062c0     <common>
+ 0003:00000340       _FMUSIC_DummyChannel       00406340     <common>
+ 0003:000003c0       _FMUSIC_DummyInstrument    004063c0     <common>
+ 0003:00000514       _FMUSIC_VirtualChannel     00406514     <common>
+ 0003:00000520       _FMUSIC_DummySample        00406520     <common>
+ 0003:00000558       _FSOUND_MixBuffer          00406558     <common>
+ 0003:00000560       _FSOUND_MixBlock           00406560     <common>
+ 0003:00000584       _FSOUND_BlockSize          00406584     <common>
+ 0003:00000588       _FSOUND_MixRate            00406588     <common>
+ 0003:0000058c       _FSOUND_MixerClipCopy      0040658c     <common>
+ 0003:00000590       _FSOUND_WaveOutHandle      00406590     <common>
+ 0003:00000598       _FSOUND_Software_ChannelHead 00406598     <common>
+ 0003:000005a0       _FSOUND_BufferWidth        004065a0     <common>
+ 0003:000005b0       _FSOUND_ChannelBlock_Software 004065b0     <common>
+ 0003:000005bc       ___onexitend               004065bc     <common>
+ 0003:000005c0       ___onexitbegin             004065c0     <common>
+ 0003:000005c4       __adjust_fdiv              004065c4     <common>
+
+ entry point at        0001:00003270
+
+ Static symbols
+

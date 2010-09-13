@@ -1,0 +1,213 @@
+<html>
+<head>
+
+	<script>
+/*
+function iPhoneCheck()
+{
+	return navigator.userAgent.indexOf("iPhone") != -1;
+}
+
+function updateFromTouchEvent(event)
+{
+	for( var k=0; k<event.touches.length; k++ )
+	{
+		var touch = event.touches[k];
+		var x = touch.pageX;
+		var y = touch.pageY;
+		var el = document.getElementById( 'blob'+k );
+		el.style.left = (x-10)+'px';
+		el.style.top = (y-10)+'px';
+	}
+}
+
+
+function updateFromMouseEvent(event)
+{ 
+	var x = event.clientX;
+	var y = event.clientY;
+	var el = document.getElementById( 'blob0' );
+	el.style.left = (x-10)+'px';
+	el.style.top = (y-10)+'px';
+}
+
+function mouseDown(event)
+{
+	updateFromMouseEvent(event);
+	updateCanvas();
+}
+
+function mouseMove(event)
+{
+	// if( event.
+	// updateFromMouseEvent(event);
+	// updateCanvas();
+}
+
+function mouseUp(event)
+{
+	updateFromMouseEvent(event);
+	updateCanvas();
+}
+
+function touchStart(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchMove(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchEnd(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function touchCancel(event)
+{
+	updateFromTouchEvent(event);
+	event.preventDefault();
+	updateCanvas();
+}
+
+function updateCanvas()
+{	
+	var el = document.getElementById("can1");
+	var c = el.getContext("2d");
+	c.clearRect(0, 0, 320, 320);
+	// context.save();
+	// context.bezierCurveTo(this.cp.x, this.cp.y, m.x, m.y, m.x, m.y);  //make pretty curve, first two params =control pt
+
+	var b0e = document.getElementById('blob0');
+	var b1e = document.getElementById('blob1');
+	var b2e = document.getElementById('blob2');
+	var b0x = parseFloat( b0e.style.left )+10;
+	var b0y = parseFloat( b0e.style.top )+10;		
+	var b1x = parseFloat( b1e.style.left )+10;
+	var b1y = parseFloat( b1e.style.top )+10;		
+	var b2x = parseFloat( b2e.style.left )+10;
+	var b2y = parseFloat( b2e.style.top )+10;		
+	
+	var b012x = (b0x + b1x + b2x)/3.0;
+	var b012y = (b0y + b1y + b2y)/3.0;
+	
+	var b01x = (b0x + b1x)/2.0;
+	var b01y = (b0y + b1y)/2.0;
+	
+	c.lineWidth = 2;
+//	c.lineTo( b0x+100, b0y+100 );
+
+	c.strokeStyle = '#08f';	
+	c.beginPath();
+	c.moveTo( b0x, b0y );
+	c.quadraticCurveTo(b012x, b012y, b1x, b1y); 
+	c.closePath();
+	c.stroke();
+
+	c.strokeStyle = '#f08';	
+	c.beginPath();
+	c.moveTo( b1x, b1y );
+	c.quadraticCurveTo(b012x, b012y, b2x, b2y); 
+	c.closePath();
+	c.stroke();
+
+	c.strokeStyle = '#8f0';	
+	c.beginPath();
+	c.moveTo( b2x, b2y );
+	c.quadraticCurveTo(b012x, b012y, b0x, b0y); 
+	c.closePath();
+	c.stroke();
+
+}
+
+function init()
+{
+	var el1 = document.getElementById( 'test1' );
+	if( iPhoneCheck() )
+	{
+		el1.addEventListener("touchstart", touchStart, false);
+		el1.addEventListener("touchmove", touchMove, true);
+		el1.addEventListener("touchend", touchEnd, false);
+		el1.addEventListener("touchcancel", touchCancel, false);
+	}
+	else
+	{
+		el1.addEventListener("mousedown", mouseDown, false);
+		el1.addEventListener("mousemove", mouseMove, false);
+		el1.addEventListener("mouseup", mouseUp, false);
+	}
+	updateCanvas();
+}
+*/
+
+function initSongView()
+{
+}
+
+	</script>
+
+	<link rel="Stylesheet" href="seq.css" />
+</head>
+<body class="seq" onload="initSongView();">
+	<div class="headerblock">
+		<div class="logo">
+		</div>
+		<div class="status">
+			<div class="clock">
+				1:2:3:4
+			</div>
+			<div class="loopinfo">
+				LOOP-ON<br />
+				3:3:1<br />
+				3:3:3<br />
+			</div>
+			<div class="playstate">
+			</div>
+			<div class="buttons">
+				<a href="#">RWD</a> | <a href="#">PLAY</a> | <a href="#">STOP</a> | <a href="#">FWD</a>
+			</div>
+		</div>
+		<div class="tabs">
+			<ul>
+				<li class="selected"><a href="jam.htm"><span>JAM</span></a></li>
+				<li><a href="song.htm"><span>SNG</span></a> </li>
+				<li><a href="pattern.htm"><span>PAT</span></a> </li>
+				<li><a href="instruments.htm"><span>INS</span></a> </li>
+				<li><a href="settings.htm"><span>SET</span></a> </li>
+				<li class="last"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mainblock">
+		<div class="innermainblock">
+			<div class="instrumenteditor-content">
+				<div class="instrumenteditor-top">
+					<ul class="toolbar">
+						<li><big>Jam mode</big></li>
+						<li></li>
+						<li class="last"></li>
+					</ul>
+				</div>
+				<div class="instrumenteditor-body">
+					<div class="inner">
+						<p>
+							alla kanaler + mixer + cue'a pattern per kanal, typ som i live... send a/b hade
+							varit kul också.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerblock">
+	</div>
+</body>
+</html>

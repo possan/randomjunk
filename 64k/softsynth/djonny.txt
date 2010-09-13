@@ -1,0 +1,40 @@
+
+
+envelope:
+
+	obestämt antal punkter
+	tcb controller
+	enabla sustain
+	enabla loop range
+
+per oscillator: (4 st)
+
+	vågform		sinus,trekant,fyrkant,sågjonny,brusjonny
+	använda samma envelopes för alla oscillatorer
+	amp			envelope
+	pitch		envelope
+	cutoff		envelope
+	resonance	envelope
+
+per sampling:
+
+	dist_thru
+	dist_threshold
+	dist_amount
+
+	delay_thru
+	delay_feedback
+	delay_time
+
+	mixtyp_1 (o1 + o2)
+	mixtyp_2 (o3 + o4)
+	mixtyp_3 ((o1+o2) + (o3+o4)
+
+	use_osc1_envelope
+	use_osc1_envelope
+	use_osc1_envelope
+	use_osc1_envelope
+
+	sequencer_bpm
+	sequencer_längd	
+	sequencern - note, note_av_på, slide, accent

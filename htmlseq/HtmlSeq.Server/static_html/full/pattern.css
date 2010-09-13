@@ -1,0 +1,346 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.patterneditor-content
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.patterneditor-content .halfheight
+{
+	position: relative;
+	height: 50%;
+}
+
+.patterneditor-content .halfheight .grouptop
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	height: 40px;
+}
+
+.patterneditor-content .halfheight .groupbody
+{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #111;
+	overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.patterneditor-notes
+{
+	margin: 20px 0;
+}
+
+.patterneditor-automation
+{
+	margin: 20px 0;
+}
+
+
+
+.patterneditor-grid
+{
+	position: relative;
+}
+
+.patterneditor-grid ul.notelines
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.notelines li
+{
+	position: relative; 
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-position: 100px 0;
+	background-repeat: repeat-x;
+}
+
+.patterneditor-grid ul.notelines.bw80 li
+{
+	background-image: url(img/grid-test-100.gif);
+}
+
+.patterneditor-grid ul.notelines.bw40 li
+{
+	background-image: url(img/grid-test-50.gif);
+}
+
+.patterneditor-grid ul.notelines.bw160 li
+{
+	background-image: url(img/grid-test-200.gif);
+}
+
+.patterneditor-grid ul.notelines li div
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 20px;
+	background-image: url(img/notetrack-head-white.gif);
+}
+
+.patterneditor-grid ul.notelines li.black div
+{
+	background-image: url(img/notetrack-head-black.gif);
+}
+
+.patterneditor-grid ul.notelines li div span
+{
+	position: absolute;
+	left: 6px;
+	top: 3px;
+	color: #000;
+}
+
+
+.patterneditor-grid ul.notelines li.black div span
+{
+	color: #fff;
+}
+
+/*
+.patterneditor-grid ul.notelines li.odd
+{ 
+}
+
+.patterneditor-grid ul.notelines li div
+{ 
+	width: 100px;
+	height: 20px;
+}
+
+.patterneditor-grid ul.notelines li.odd div
+{ 
+}*/
+
+.patterneditor-grid .r .h span,
+.patterneditor-grid .or .h span
+{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	color: #fff;
+}
+
+.patterneditor-grid .r
+{
+	background-color: #222;
+}
+
+.patterneditor-grid .or
+{
+	background-color: #333;
+}
+
+.patterneditor-grid .r .h
+{
+	background-color: #444;
+}
+
+.patterneditor-grid .or .h
+{
+	background-color: #555;
+}
+
+.patterneditor-grid .r .t,
+.patterneditor-grid .or .t
+{
+}
+
+.patterneditor-grid .b
+{
+	position: absolute;
+	height: 20px;
+	background-color: #f80;
+}
+
+.patterneditor-grid .b div
+{
+	display: block;   
+	overflow: hidden;
+	padding: 3px 5px;
+	color: #000;
+}
+
+.patterneditor-grid .b div span
+{
+	
+}
+
+.patterneditor-grid .l
+{
+	border-left: 1px dotted #000;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+.patterneditor-grid .p
+{
+	border-left: 1px dotted #fff;
+	position: absolute;
+	width: 1px;
+	top: 0px;
+	height: 100%;
+}
+
+
+.patterneditor-grid .g
+{
+	border-left: 1px solid #888;
+	position: absolute;
+	width: 5px;
+	bottom: 0px;
+}
+
+.patterneditor-grid div#notemouse
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ff0;
+}
+
+
+
+
+
+
+
+
+
+
+.patterneditor-grid ul.automationlines
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.automationlines li
+{
+	position: relative;
+	background-color: #222;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.patterneditor-grid ul.automationlines li.odd
+{
+	background-color: #333;
+}
+
+.patterneditor-grid ul.automationlines li div.head
+{
+	background-color: #444;
+	width: 100px;
+	height: 200px;
+}
+
+.patterneditor-grid ul.automationlines li.odd div.head
+{
+	background-color: #555;
+}
+
+.patterneditor-grid ul.automationlines li div.head select
+{
+	width: 80px;
+}
+
+.patterneditor-grid ul.automationlines li div.head p
+{
+	display: block;
+	margin: 8px 8px 0px 8px;
+}
+
+.patterneditor-grid ul.automationlines li div.track
+{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	right: 0px;
+	height: 200px;
+}
+
+.patterneditor-grid ul.automationlines li div.track div.pt
+{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #8f0;
+}
+
+
+
+
+
+

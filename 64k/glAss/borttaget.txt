@@ -1,0 +1,53 @@
+
+		/*
+		float xxx = 20 + 10*cos(t*3.5);
+		float yyy = 15 + 12*sin(t*2.5);
+		float xxx2 = 20 + 10*sin(t*4.5);
+		float yyy2 = 15 + 12*cos(t*5.5);
+
+		for( j=0; j<30; j++ ) {
+			for( i=0; i<40; i++ ) {
+				long o = j*40+i;
+
+				float d = sqrt( ((xxx-(float)i) * (xxx-(float)i)) + ((yyy-(float)j) * (yyy-(float)j)) );
+				float d2 = sqrt( ((xxx2-(float)i) * (xxx2-(float)i)) + ((yyy2-(float)j) * (yyy2-(float)j)) );
+				
+//				pfsd[o] = 1/(1+d)*sin( (d/1)-t*12 );
+//				pfsd[o] += 1/(1+d2)*sin( (d2/1)-t*12 );
+
+//				pfsd[o] = (1/(1+t))*sin( (d*d/25)-t*15 );
+
+				pfsd[o] = d2;
+
+				//pfsd[o] = 0;
+				//pfsd[o] += 3*cos((float)(j+t)/5.0f) + sin((float)i/4.0f+t);
+				
+				//pfsv[o] = (float)j / 30.0f;//cos(i+j+t);
+			};
+		};
+
+		for( j=0; j<30; j++ ) {
+			for( i=1; i<39; i++ ) {
+				long o = j*40+i;
+				float dx = pfsd[o+1] - pfsd[o-1];
+				float dy = pfsd[o+40] - pfsd[o-40];
+				
+				pfsu[o] = (float)i/40.0f + (dx * 0.04f);
+				pfsv[o] = (float)j/30.0f + (dy * 0.04f);
+
+				if( pfsu[o]<0 ) pfsu[o] = 0;
+				if( pfsv[o]<0 ) pfsv[o] = 0;
+				if( pfsu[o]>1 ) pfsu[o] = 1;
+				if( pfsv[o]>1 ) pfsv[o] = 1;
+
+				pfsu2[o] = 1 + (0.15 * dx) + (0.15 * dy); 
+				pfsv2[o] = 0.5 + (0.3 * dx);
+
+				if( pfsu2[o]<0 ) pfsu2[o] = 0;
+				if( pfsv2[o]<0 ) pfsv2[o] = 0;
+				if( pfsu2[o]>1 ) pfsu2[o] = 1;
+				if( pfsv2[o]>1 ) pfsv2[o] = 1;
+			
+			};	
+		};*/
+

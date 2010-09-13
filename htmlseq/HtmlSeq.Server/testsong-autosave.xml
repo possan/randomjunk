@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<song>
+  <common>
+    <name>Unnamed</name>
+    <bpm>120</bpm>
+    <duration>32</duration>
+    <beats1>4</beats1>
+    <beats2>4</beats2>
+    <loopstart>1</loopstart>
+    <loopend>7</loopend>
+    <looping>0</looping>
+    <position>0</position>
+  </common>
+  <patterns>
+    <pattern id="pat3009755544820" name="drums1" instrument="ins6587888973701" duration="16">
+      <notes>
+        <note id="note4662564549305" from="0" to="100" note="36" vel="100" />
+        <note id="note1116331952380" from="800" to="900" note="36" vel="100" />
+        <note id="note3985844252320" from="400" to="500" note="36" vel="100" />
+        <note id="note4574236254739" from="1200" to="1300" note="36" vel="100" />
+        <note id="note7821831166021" from="400" to="500" note="38" vel="100" />
+        <note id="note7821831019022" from="1200" to="1300" note="38" vel="100" />
+        <note id="note6131036953421" from="900" to="1000" note="42" vel="100" />
+        <note id="note6131030931772" from="1100" to="1200" note="42" vel="100" />
+        <note id="note6131031322373" from="1300" to="1400" note="42" vel="100" />
+        <note id="note6131033937017" from="200" to="300" note="41" vel="100" />
+        <note id="note61310397111411" from="500" to="600" note="41" vel="100" />
+        <note id="note61310371110613" from="1500" to="1600" note="38" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+    <pattern id="pat4465392096310" name="bassline1" instrument="ins6960119887470" duration="8">
+      <notes>
+        <note id="note50371413331312" from="0" to="100" note="36" vel="100" />
+        <note id="note3157811824940" from="200" to="300" note="47" vel="100" />
+        <note id="note6266266324582" from="500" to="600" note="59" vel="100" />
+        <note id="note0541974493110" from="400" to="500" note="36" vel="100" />
+        <note id="note0541979766141" from="600" to="700" note="47" vel="100" />
+        <note id="note0541977742122" from="700" to="800" note="47" vel="100" />
+        <note id="note0541978868403" from="500" to="550" note="36" vel="100" />
+        <note id="note0541977487765" from="300" to="400" note="47" vel="100" />
+        <note id="note0541975712896" from="400" to="500" note="62" vel="100" />
+        <note id="note0541972440247" from="700" to="800" note="61" vel="100" />
+        <note id="note0541978073748" from="200" to="300" note="59" vel="100" />
+        <note id="note0541977850479" from="700" to="750" note="71" vel="100" />
+        <note id="note05419758530110" from="500" to="600" note="71" vel="100" />
+        <note id="note2650723824840" from="100" to="200" note="36" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+    <pattern id="pat1255625274720" name="main beat4" instrument="ins6960119887470" duration="4">
+      <notes>
+        <note id="note5115895293441" from="400" to="500" note="36" vel="100" />
+        <note id="note5115897639832" from="800" to="900" note="36" vel="100" />
+        <note id="note5115894686743" from="1200" to="1300" note="36" vel="100" />
+        <note id="note5115898271714" from="1400" to="1500" note="37" vel="100" />
+        <note id="note5115897104335" from="1200" to="1300" note="40" vel="100" />
+        <note id="note5115898231186" from="400" to="500" note="40" vel="100" />
+        <note id="note6714272597520" from="1500" to="1600" note="40" vel="100" />
+        <note id="note6714273638471" from="600" to="700" note="37" vel="100" />
+        <note id="note6714273219234" from="600" to="700" note="42" vel="100" />
+        <note id="note6714272264175" from="900" to="1000" note="43" vel="100" />
+        <note id="note6714274319616" from="800" to="900" note="42" vel="100" />
+        <note id="note6714272384767" from="1300" to="1400" note="42" vel="100" />
+        <note id="note6714276221558" from="400" to="500" note="45" vel="100" />
+        <note id="note6714270687689" from="1100" to="1200" note="45" vel="100" />
+        <note id="note2765451267350" from="1000" to="1100" note="38" vel="100" />
+        <note id="note2765452174411" from="700" to="800" note="38" vel="100" />
+        <note id="note4805632454300" from="200" to="300" note="43" vel="100" />
+        <note id="note4805636212701" from="0" to="100" note="43" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+    <pattern id="pat4847376937674" name="drums2" instrument="ins6587886266660" duration="16">
+      <notes>
+        <note id="note5037145157426" from="900" to="1000" note="37" vel="100" />
+        <note id="note50371413331312" from="0" to="100" note="42" vel="100" />
+        <note id="note50371484102213" from="100" to="200" note="40" vel="100" />
+        <note id="note50371430561814" from="500" to="600" note="37" vel="100" />
+        <note id="note50371486183515" from="800" to="900" note="36" vel="100" />
+        <note id="note50371443242516" from="1100" to="1200" note="39" vel="100" />
+        <note id="note50371417354017" from="1000" to="1100" note="38" vel="100" />
+        <note id="note50371466778419" from="400" to="500" note="39" vel="100" />
+        <note id="note50371472260820" from="200" to="300" note="38" vel="100" />
+        <note id="note50371450486621" from="300" to="400" note="36" vel="100" />
+        <note id="note50371436160722" from="600" to="700" note="41" vel="100" />
+        <note id="note50371497841323" from="700" to="800" note="39" vel="100" />
+        <note id="note4847378977080" from="1200" to="1300" note="40" vel="100" />
+        <note id="note4847374258941" from="1300" to="1400" note="37" vel="100" />
+        <note id="note4847371488402" from="1400" to="1500" note="36" vel="100" />
+        <note id="note4847374349743" from="1500" to="1600" note="38" vel="100" />
+      </notes>
+      <automations />
+    </pattern>
+  </patterns>
+  <tracks>
+    <track id="u1" name="xx" instrument="" livepattern="pat3009755544820" volume="95" transpose="0" mute="0" solo="0">
+      <items />
+    </track>
+    <track id="u2" name="yy" instrument="" livepattern="pat4465392096310" volume="67" transpose="0" mute="1" solo="0">
+      <items />
+    </track>
+    <track id="u3" name="TRK4" instrument="" livepattern="pat1255625274720" volume="94" transpose="0" mute="0" solo="0">
+      <items />
+    </track>
+  </tracks>
+  <instruments>
+    <instrument id="ins6587886266660" name="piano" type="" midichannel="0" midipatch="1" mididevice="0" />
+    <instrument id="ins6587888973701" name="Drums" type="" midichannel="9" midipatch="2" mididevice="0" />
+    <instrument id="ins6960119887470" name="synth" type="" midichannel="0" midipatch="12" mididevice="0" />
+  </instruments>
+</song>

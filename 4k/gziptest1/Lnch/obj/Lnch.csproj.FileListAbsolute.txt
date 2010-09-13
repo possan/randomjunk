@@ -1,0 +1,10 @@
+C:\work\4k\gziptest1\Lnch\bin\Debug\Lnch.exe
+C:\work\4k\gziptest1\Lnch\bin\Debug\Lnch.pdb
+C:\work\4k\gziptest1\Lnch\obj\Debug\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\Lnch\obj\Debug\Lnch.exe
+C:\work\4k\gziptest1\Lnch\obj\Debug\Lnch.pdb
+C:\work\4k\gziptest1\Lnch\bin\Release\Lnch.exe
+C:\work\4k\gziptest1\Lnch\bin\Release\Lnch.pdb
+C:\work\4k\gziptest1\Lnch\obj\Release\ResolveAssemblyReference.cache
+C:\work\4k\gziptest1\Lnch\obj\Release\Lnch.exe
+C:\work\4k\gziptest1\Lnch\obj\Release\Lnch.pdb

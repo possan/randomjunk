@@ -1,0 +1,52 @@
+//
+// det packade filformatet
+// 
+
+o1_used						1 bit
+  vågform					3 bittar (8 olika lägen, 5 olika vågformer)
+  filter_typ				3 bittar (8 olika lägen, 5 olika filtertyper)
+
+  amp env					1 envelope
+  pitch env					1 envelope
+  cutoff env				1 envelope
+  resonance env				1 envelope
+
+o2_used						1 bit
+  o2_uses_o1_envelopes		1 bit
+  [same as osc1]
+
+o3_used						1 bit
+  o3_uses_o1_envelopes		1 bit
+  [same as osc1]
+
+o4_used						1 bit
+  o4_uses_o1_envelopes		1 bit
+  [same as osc1]
+
+seq_bpm						8 bittar (255 lägen)
+seq_length					4 bittar (1-16 noter)
+  note						6 bittar (1-127, tangent)
+  flags						2 bittar (not och slide)
+
+mix_step1					4 bittar (16 lägen, 9 används)
+mix_step2					4 bittar (16 lägen, 9 används)
+mix_step3					4 bittar (16 lägen, 9 används)
+
+dist_thru					6 bittar (64 lägen)
+dist_threshold				6 bittar (64 lägen)
+dist_amount					6 bittar (64 lägen)
+
+-- spara delayen sist så vi kan skippa den utifall att.
+
+delay_thru					6 bittar (64 lägen)
+delay_feedback				6 bittar (64 lägen)
+delay_time					6 bittar (64 lägen)
+
+-- end of file --
+
+ett envelope:
+  antal_punkter				3 bit (8 punkter)
+  sustain_point				3 bit (8 möjligheter, om av, >antal_punkter)
+    punkt_tid				6 bit (64 lägen, från 0 - 8) 
+	punkt_värde				6 bit (64 lägen, från 0 - 1)
+	punkt_ease				4 bit (16 lägen)
